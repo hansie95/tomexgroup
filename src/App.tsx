@@ -33,7 +33,7 @@ function AppContent() {
       <ScrollToTop />
       <div className="min-h-screen bg-gray-50 flex flex-col">
         <Header />
-        <main className="pt-20 flex-grow">
+        <main className="pt-12 flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sectors/gift" element={<GiftSector />} />

@@ -56,7 +56,7 @@ export default function HotelSector() {
       </Helmet>
 
       {/* Hero Section with Branded Header */}
-      <section className="relative h-[80vh] flex items-center">
+      <section className="relative h-[90vh] flex items-center">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1600"

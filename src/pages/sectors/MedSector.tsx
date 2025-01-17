@@ -66,7 +66,7 @@ export default function MedSector() {
       </Helmet>
 
       {/* Hero Section with Branded Header */}
-      <section className="relative h-[80vh] flex items-center">
+      <section className="relative h-[90vh] flex items-center">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&q=80&w=1600"

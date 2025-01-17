@@ -1,0 +1,92 @@
+{
+  "common": {
+    "readMore": "Read More",
+    "contact": "Contact Us",
+    "learnMore": "Learn More",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "nav": {
+    "home": "Home",
+    "gift": "Tomex Gift",
+    "med": "Tomex Med",
+    "sport": "Tomex Sport",
+    "tech": "Tomex Tech",
+    "hotel": "Szallodapro"
+  },
+  "home": {
+    "hero": {
+      "title": "Welcome to Tomex Group",
+      "subtitle": "Your Partner in Multiple Industries",
+      "description": "We provide comprehensive solutions across promotional products, medical supplies, sports equipment, IT solutions, and hotel supplies."
+    },
+    "stats": {
+      "subsidiaries": "subsidiaries",
+      "employees": "employees",
+      "countries": "countries",
+      "years": "years"
+    },
+    "sections": {
+      "companies": "Our Companies",
+      "leadership": {
+        "title": "Our Leadership Team",
+        "subtitle": "Meet the directors who lead our divisions with expertise and vision"
+      }
+    },
+    "contact": {
+      "headquarters": "Headquarters"
+    }
+  },
+  "gift": {
+    "description": "Our TomexGift division offers professional, tailor-made promotional gift solutions for companies, aiming to increase brand awareness, strengthen client relationships, and effectively communicate corporate identity.",
+    "products": "Our product range includes over 100,000 gift items designed for everyday business needs and campaigns. These include practical office supplies, stylish mugs, bottles, and thermoses, textiles, as well as innovative technological tools suited to modern lifestyles.",
+    "branding": "We make the entire product selection unique with our local branding capabilities, which not only make our services faster but also more cost-effective. Whether it's logo printing, engraving, or complete branding solutions, we guarantee that the final result reflects our partners' brand values.",
+    "whyUs": {
+      "title": "Why choose us?",
+      "speed": "Speed and flexibility: We perform branding in-house, ensuring short turnaround times.",
+      "uniqueness": "Uniqueness: We help create creative and eye-catching solutions to help our clients stand out in the market.",
+      "quality": "Quality: We only offer products that enhance brand visibility through long-term use."
+    }
+  },
+  "med": {
+    "description": "Our TomexMed division offers disposable products and protective equipment for the healthcare and industrial sectors. Our primary goal is to support the safe and hygienic operations of factories, meat processing plants, and healthcare institutions.",
+    "products": "Our product range includes protective gloves, clothing, hygiene products, and other disposable tools that comply with the strictest industry standards.",
+    "whyUs": {
+      "title": "Why choose us?",
+      "reliability": "Reliability: We work with consistently available stock.",
+      "quality": "Quality assurance: Our products meet the highest healthcare and industrial requirements.",
+      "expertise": "Expertise: Our years of experience ensure the best solutions for our partners."
+    }
+  },
+  "sport": {
+    "description": "Our TomexSport division offers tailored solutions in the world of sports for both teams and fans. Our primary focus is designing fan shops for sports teams and producing custom products that reflect the identity of the respective club.",
+    "products": "Our product range includes premium team apparel, fan merchandise, and equipment for sports and recovery. We take pride in being an official reseller of Puma, allowing us to outfit teams in professional brands that fully meet their needs.",
+    "whyUs": {
+      "title": "Why choose us?",
+      "expertise": "Expertise: Our team, supported by professional athletes, guarantees sport-specific solutions.",
+      "uniqueness": "Uniqueness: Branded team apparel and fan merchandise all in one place.",
+      "quality": "Quality partnership: As an official Puma reseller, we provide premium solutions."
+    }
+  },
+  "hotel": {
+    "description": "Our Szállodapro division offers professional solutions for accommodations, aiming to perfect the guest experience down to the finest details.",
+    "products": "Our product portfolio includes premium-quality hotel amenities, textiles, hygiene products, cosmetics, and slippers. Thanks to our European manufacturing partnerships and substantial stock availability, our products can be fully customized to match a hotel's branding, including personalized logos, within just one month.",
+    "whyUs": {
+      "title": "Why choose us?",
+      "tailored": "Tailored products: All our products can be customized to fit the hotel's design and needs.",
+      "delivery": "Fast delivery: We work with short lead times, shipping directly from our Budapest warehouse to minimize restocking delays.",
+      "quality": "European manufacturing background: Through our partners, we ensure the highest quality."
+    }
+  },
+  "tech": {
+    "description": "Our TomexTech division offers professional digital solutions for businesses, helping companies establish a presence in the digital space, modernize outdated systems, and streamline their processes.",
+    "services": "Our services include web development, system simplification and management, and comprehensive IT consulting. Leveraging our expertise in frontend and backend development, we provide end-to-end solutions, including website, application, and custom system development.",
+    "whyUs": {
+      "title": "Why choose us?",
+      "presence": "Digital presence: We help build your company's online identity with modern and functional websites and systems.",
+      "solutions": "Comprehensive solutions: With our expertise in frontend and backend development, we cover all needs, from custom software to the necessary hardware.",
+      "ai": "AI support: From implementing artificial intelligence to advisory services, we guide our clients in finding optimal solutions.",
+      "maintenance": "Maintenance and operations: We not only develop but also ensure the continuous operation and improvement of our systems."
+    }
+  }
+}

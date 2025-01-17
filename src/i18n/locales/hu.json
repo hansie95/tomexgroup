@@ -1,0 +1,92 @@
+{
+  "common": {
+    "readMore": "Tovább",
+    "contact": "Kapcsolat",
+    "learnMore": "Tudj meg többet",
+    "menu": "Menü",
+    "close": "Bezár"
+  },
+  "nav": {
+    "home": "Főoldal",
+    "gift": "Tomex Gift",
+    "med": "Tomex Med",
+    "sport": "Tomex Sport",
+    "tech": "Tomex Tech",
+    "hotel": "Szallodapro"
+  },
+  "home": {
+    "hero": {
+      "title": "Üdvözöljük a Tomex Group oldalán",
+      "subtitle": "Az Ön partnere több iparágban",
+      "description": "Átfogó megoldásokat kínálunk a promóciós termékek, orvosi eszközök, sportfelszerelések, IT megoldások és szállodai kellékek területén."
+    },
+    "stats": {
+      "subsidiaries": "leányvállalat",
+      "employees": "alkalmazott",
+      "countries": "ország",
+      "years": "év"
+    },
+    "sections": {
+      "companies": "Vállalataink",
+      "leadership": {
+        "title": "Vezetőségünk",
+        "subtitle": "Ismerje meg igazgatóinkat, akik szakértelemmel és jövőképpel vezetik divízióinkat"
+      }
+    },
+    "contact": {
+      "headquarters": "Központi iroda"
+    }
+  },
+  "gift": {
+    "description": "A TomexGift üzletágunk cégek számára kínál professzionális, egyedi reklámajándék megoldásokat, amelyek célja a márkaismertség növelése, az ügyfélkapcsolatok erősítése és a vállalati arculat erőteljes kommunikációja.",
+    "products": "Termékkínálatunk több 100.000 db ajándéktárgyat foglal magában, az üzleti mindennapokra és kampányokra szabva. Ide tartoznak például a praktikus irodai kellékek, dizájnos bögrék, kulacsok és termoszok, textíliák, valamint a modern életvitelhez kapcsolódó innovatív technológiai eszközök.",
+    "branding": "A teljes termékválasztékot, helyi emblémázási kapacitásunkkal tesszük egyedivé, ami nemcsak gyorsabbá, de költséghatékonyabbá is teszi szolgáltatásainkat. Legyen szó logózásról, gravírozásról vagy akár teljes arculati megoldásokról, garantáljuk, hogy a végeredmény tükrözi partnereink márkaértékeit.",
+    "whyUs": {
+      "title": "Miért válasszon minket?",
+      "speed": "Gyorsaság és rugalmasság: Az emblémázást helyben végezzük, így rövid határidővel dolgozunk.",
+      "uniqueness": "Egyediség: Segítünk kreatív és figyelemfelkeltő megoldások kialakításában, hogy ügyfeleink kiemelkedjenek a piacon.",
+      "quality": "Minőség: Csak olyan termékeket kínálunk, amelyek a hosszú távú használat révén növelik a márka láthatóságát."
+    }
+  },
+  "med": {
+    "description": "A TomexMed üzletágunk az egészségügyi és ipari szektorok számára kínál egyszer használatos termékeket és munkavédelmi felszereléseket. Fő célunk a gyárak, húsüzemek és egészségügyi intézmények biztonságos és higiénikus működésének támogatása.",
+    "products": "Termékkínálatunk tartalmaz védőkesztyűket, védőruházatot, higiéniai termékeket és egyéb egyszer használatos eszközöket, amelyek megfelelnek a legszigorúbb iparági előírásoknak.",
+    "whyUs": {
+      "title": "Miért válasszon minket?",
+      "reliability": "Megbízhatóság: Mindig rendelkezésre álló készletekkel dolgozunk.",
+      "quality": "Minőségbiztosítás: Termékeink megfelelnek a legmagasabb egészségügyi és ipari követelményeknek.",
+      "expertise": "Szakértő háttér: Több éves tapasztalatunk garantálja a legjobb megoldásokat partnereink számára."
+    }
+  },
+  "sport": {
+    "description": "A TomexSport üzletág a sport világában kínál testreszabott megoldásokat csapatok és szurkolók számára egyaránt. Fő fókuszunk a sportcsapatok szurkolói boltjainak kialakítása és egyedi termékek gyártatása, melyek az adott klub arculatát tükrözik.",
+    "products": "Termékkínálatunkban megtalálhatók a prémium csapatruházatok, szurkolói kellékek, valamint sportoláshoz és regenerációhoz szükséges eszközök. Büszkék vagyunk arra, hogy a Puma hivatalos viszonteladói vagyunk, így csapatokat professzionális márkába öltöztethetünk, maximálisan megfelelve az igényeiknek.",
+    "whyUs": {
+      "title": "Miért válasszon minket?",
+      "expertise": "Szakértelem: Profi sportolók által támogatott csapatunk garantálja a sportág-specifikus megoldásokat.",
+      "uniqueness": "Egyediség: Emblémázott csapatruházatok és szurkolói termékek egy helyen.",
+      "quality": "Minőségi partner: Hivatalos Puma viszonteladóként prémium megoldásokat nyújtunk."
+    }
+  },
+  "hotel": {
+    "description": "A Szállodapro üzletágunk szálláshelyek számára kínál professzionális megoldásokat, amelyek célja, hogy a vendégélményt az utolsó részletekig tökéletessé tegyük.",
+    "products": "Termékportfóliónkba tartoznak a prémium minőségű szállodai bekészítések, textíliák, higiéniai termékek, kozmetikumok és papucsok. Európai gyártói kapcsolatainknak és jelentős raktárkészletünknek köszönhetően termékeink akár 1 hónap alatt teljesen a szálloda arculatához szabhatók, beleértve az egyedi logózást is.",
+    "whyUs": {
+      "title": "Miért válasszon minket?",
+      "tailored": "Személyre szabott termékek: Minden termékünk a szálloda megjelenéséhez és igényeihez igazítható.",
+      "delivery": "Gyors szállítás: Rövid határidővel dolgozunk, valós Budapesti készletről. Így minimalizálva az utánpótlás késedelmeit.",
+      "quality": "Európai gyártói háttér: Partnereink révén a legmagasabb minőséget biztosítjuk."
+    }
+  },
+  "tech": {
+    "description": "A TomexTech üzletágunk vállalkozások számára kínál professzionális digitális megoldásokat, amelyek segítenek a cégeknek megjelenni a digitális térben, modernizálni régi rendszereiket és hatékonyabbá tenni folyamataikat.",
+    "services": "Szolgáltatásaink magukban foglalják a webfejlesztést, a rendszerek egyszerűsítését és üzemeltetését, valamint teljes körű IT-tanácsadást. Frontend és backend fejlesztői szakértelmünk révén teljes körű megoldásokat kínálunk, beleértve a weboldalak, alkalmazások és egyedi rendszerek fejlesztését.",
+    "whyUs": {
+      "title": "Miért válasszon minket?",
+      "presence": "Digitális jelenlét: Segítünk cége online arculatának felépítésében, modern és funkcionális weboldalakkal és rendszerekkel.",
+      "solutions": "Teljes körű megoldások: Frontend és backend fejlesztési szakértelmünkkel minden igényt lefedünk, beleértve az egyedi szoftvereket és a szükséges hardverek biztosítását is.",
+      "ai": "AI-támogatás: A mesterséges intelligencia bevezetésétől a tanácsadásig végigkísérjük ügyfeleinket, hogy megtalálják az optimális megoldásokat.",
+      "maintenance": "Karbantartás és üzemeltetés: Nemcsak fejlesztünk, hanem gondoskodunk rendszereink folyamatos működéséről és fejlesztéséről is."
+    }
+  }
+}

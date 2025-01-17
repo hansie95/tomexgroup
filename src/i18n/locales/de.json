@@ -1,0 +1,92 @@
+{
+  "common": {
+    "readMore": "Weiterlesen",
+    "contact": "Kontakt",
+    "learnMore": "Mehr erfahren",
+    "menu": "Menü",
+    "close": "Schließen"
+  },
+  "nav": {
+    "home": "Startseite",
+    "gift": "Tomex Gift",
+    "med": "Tomex Med",
+    "sport": "Tomex Sport",
+    "tech": "Tomex Tech",
+    "hotel": "Szallodapro"
+  },
+  "home": {
+    "hero": {
+      "title": "Willkommen bei Tomex Group",
+      "subtitle": "Ihr Partner in mehreren Branchen",
+      "description": "Wir bieten umfassende Lösungen in den Bereichen Werbeartikel, Medizinbedarf, Sportausrüstung, IT-Lösungen und Hotelausstattung."
+    },
+    "stats": {
+      "subsidiaries": "Tochtergesellschaften",
+      "employees": "Mitarbeiter",
+      "countries": "Länder",
+      "years": "Jahre"
+    },
+    "sections": {
+      "companies": "Unsere Unternehmen",
+      "leadership": {
+        "title": "Unsere Führungskräfte",
+        "subtitle": "Lernen Sie unsere Direktoren kennen, die unsere Divisionen mit Expertise und Vision führen"
+      }
+    },
+    "contact": {
+      "headquarters": "Hauptsitz"
+    }
+  },
+  "gift": {
+    "description": "Unsere TomexGift-Sparte bietet Unternehmen professionelle und maßgeschneiderte Werbegeschenklösungen, die darauf abzielen, die Markenbekanntheit zu steigern, Kundenbeziehungen zu stärken und die Unternehmensidentität wirkungsvoll zu kommunizieren.",
+    "products": "Unser Sortiment umfasst über 100.000 Geschenkartikel, die auf den Geschäftsalltag und Werbekampagnen abgestimmt sind. Dazu gehören praktische Büromaterialien, stilvolle Tassen, Flaschen und Thermobecher, Textilien sowie innovative technologische Tools, die zu einem modernen Lebensstil passen.",
+    "branding": "Dank unserer lokalen Veredelungskapazitäten machen wir das gesamte Produktsortiment einzigartig, was unsere Dienstleistungen nicht nur schneller, sondern auch kosteneffizienter macht. Ob Logodruck, Gravur oder komplette Branding-Lösungen – wir garantieren, dass das Endergebnis die Markenwerte unserer Partner widerspiegelt.",
+    "whyUs": {
+      "title": "Warum uns wählen?",
+      "speed": "Schnelligkeit und Flexibilität: Wir führen die Veredelung vor Ort durch und garantieren kurze Lieferzeiten.",
+      "uniqueness": "Einzigartigkeit: Wir helfen dabei, kreative und auffällige Lösungen zu entwickeln, die unsere Kunden auf dem Markt hervorheben.",
+      "quality": "Qualität: Wir bieten ausschließlich Produkte an, die durch langfristige Nutzung die Sichtbarkeit der Marke erhöhen."
+    }
+  },
+  "med": {
+    "description": "Unsere TomexMed-Sparte bietet Einwegprodukte und Schutzausrüstung für den Gesundheits- und Industriesektor an. Unser Hauptziel ist es, die sichere und hygienische Arbeitsweise von Fabriken, Fleischverarbeitungsbetrieben und Gesundheitseinrichtungen zu unterstützen.",
+    "products": "Unser Produktsortiment umfasst Schutzhandschuhe, Schutzkleidung, Hygieneartikel und weitere Einwegwerkzeuge, die den strengsten Branchenstandards entsprechen.",
+    "whyUs": {
+      "title": "Warum uns wählen?",
+      "reliability": "Zuverlässigkeit: Wir arbeiten mit ständig verfügbaren Lagerbeständen.",
+      "quality": "Qualitätssicherung: Unsere Produkte erfüllen die höchsten Anforderungen im Gesundheits- und Industriesektor.",
+      "expertise": "Fachwissen: Unsere jahrelange Erfahrung garantiert die besten Lösungen für unsere Partner."
+    }
+  },
+  "sport": {
+    "description": "Unsere TomexSport-Sparte bietet maßgeschneiderte Lösungen in der Welt des Sports für Teams und Fans. Unser Hauptfokus liegt auf der Gestaltung von Fanshops für Sportmannschaften und der Produktion von individuell angefertigten Produkten, die die Identität des jeweiligen Clubs widerspiegeln.",
+    "products": "Unser Produktsortiment umfasst hochwertige Teamkleidung, Fanartikel sowie Ausrüstung für Sport und Regeneration. Wir sind stolz darauf, offizieller Wiederverkäufer von Puma zu sein, sodass wir Teams mit professionellen Marken ausstatten können, die perfekt auf ihre Bedürfnisse abgestimmt sind.",
+    "whyUs": {
+      "title": "Warum uns wählen?",
+      "expertise": "Fachwissen: Unser Team, unterstützt von Profisportlern, garantiert sportartspezifische Lösungen.",
+      "uniqueness": "Einzigartigkeit: Gebrandete Teamkleidung und Fanartikel an einem Ort.",
+      "quality": "Qualitätspartner: Als offizieller Puma-Wiederverkäufer bieten wir Premiumlösungen an."
+    }
+  },
+  "hotel": {
+    "description": "Unsere Szállodapro-Sparte bietet professionelle Lösungen für Unterkünfte, mit dem Ziel, das Gästeerlebnis bis ins kleinste Detail zu perfektionieren.",
+    "products": "Unser Produktportfolio umfasst hochwertige Hotelartikel, Textilien, Hygieneprodukte, Kosmetika und Hausschuhe. Dank unserer europäischen Produktionspartnerschaften und unseres großen Lagerbestands können unsere Produkte, einschließlich individueller Logos, innerhalb eines Monats vollständig an das Branding des Hotels angepasst werden.",
+    "whyUs": {
+      "title": "Warum uns wählen?",
+      "tailored": "Maßgeschneiderte Produkte: Alle unsere Produkte können an das Design und die Bedürfnisse des Hotels angepasst werden.",
+      "delivery": "Schnelle Lieferung: Wir arbeiten mit kurzen Lieferzeiten und liefern direkt aus unserem Lager in Budapest, um Verzögerungen bei der Nachbestellung zu minimieren.",
+      "quality": "Europäische Produktionspartnerschaften: Über unsere Partner gewährleisten wir die höchste Qualität."
+    }
+  },
+  "tech": {
+    "description": "Unsere TomexTech-Sparte bietet Unternehmen professionelle digitale Lösungen, die ihnen helfen, sich im digitalen Raum zu präsentieren, alte Systeme zu modernisieren und ihre Prozesse effizienter zu gestalten.",
+    "services": "Unsere Dienstleistungen umfassen Webentwicklung, Systemvereinfachung und -betrieb sowie umfassende IT-Beratung. Dank unserer Expertise in Frontend- und Backend-Entwicklung bieten wir Komplettlösungen an, darunter die Entwicklung von Websites, Anwendungen und individuellen Systemen.",
+    "whyUs": {
+      "title": "Warum uns wählen?",
+      "presence": "Digitale Präsenz: Wir helfen Ihnen, das Online-Erscheinungsbild Ihres Unternehmens mit modernen und funktionalen Websites und Systemen aufzubauen.",
+      "solutions": "Umfassende Lösungen: Mit unserer Expertise in Frontend- und Backend-Entwicklung decken wir alle Bedürfnisse ab, von individueller Software bis hin zur Bereitstellung der notwendigen Hardware.",
+      "ai": "KI-Unterstützung: Von der Implementierung künstlicher Intelligenz bis zur Beratung begleiten wir unsere Kunden, um optimale Lösungen zu finden.",
+      "maintenance": "Wartung und Betrieb: Wir entwickeln nicht nur, sondern sorgen auch für den kontinuierlichen Betrieb und die Weiterentwicklung unserer Systeme."
+    }
+  }
+}

@@ -310,46 +310,47 @@ export default function GiftSector() {
             </p>
           </div>
           
-          <div className="flex justify-center gap-10">
-                     {teamMembers.map((member, index) => (
-                       <motion.div
-                         key={member.name}
-                         initial={{ opacity: 0, y: 20 }}
-                         whileInView={{ opacity: 1, y: 0 }}
-                         transition={{ delay: index * 0.2 }}
-                         className="bg-white rounded-lg shadow-lg overflow-hidden w-80"
-                       >
-                         <div className="aspect-w-1 aspect-h-1">
-                           <img
-                             src={member.image}
-                             alt={member.name}
-                             className="w-full h-72 object-cover object-top"
-                           />
-                         </div>
-                         <div className="p-6">
-                           <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                           <p className="text-tomex-light-teal font-medium mb-3">{member.role}</p>
-                           <p className="text-gray-600 mb-4">{member.description}</p>
-                           <div className="space-y-2">
-                             <a
-                               href={`mailto:${member.contact.email}`}
-                               className="flex items-center text-gray-600 hover:text-tomex-dark-teal transition-colors"
-                             >
-                               <Mail className="w-4 h-4 mr-2" />
-                               {member.contact.email}
-                             </a>
-                             <a
-                               href={`tel:${member.contact.phone}`}
-                               className="flex items-center text-gray-600 hover:text-tomex-dark-teal transition-colors"
-                             >
-                               <Phone className="w-4 h-4 mr-2" />
-                               {member.contact.phone}
-                             </a>
-                           </div>
-                         </div>
-                       </motion.div>
-                     ))}
-                   </div>
+         <div className="flex flex-wrap justify-center gap-10">
+          {teamMembers.map((member, index) => (
+            <motion.div
+              key={member.name}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.2 }}
+              className="bg-white rounded-lg shadow-lg overflow-hidden w-80"
+            >
+              <div className="aspect-w-1 aspect-h-1">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-72 object-cover object-top"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
+                <p className="text-tomex-light-teal font-medium mb-3">{member.role}</p>
+                <p className="text-gray-600 mb-4">{member.description}</p>
+                <div className="space-y-2">
+                  <a
+                    href={`mailto:${member.contact.email}`}
+                    className="flex items-center text-gray-600 hover:text-tomex-dark-teal transition-colors"
+                  >
+                    <Mail className="w-4 h-4 mr-2" />
+                    {member.contact.email}
+                  </a>
+                  <a
+                    href={`tel:${member.contact.phone}`}
+                    className="flex items-center text-gray-600 hover:text-tomex-dark-teal transition-colors"
+                  >
+                    <Phone className="w-4 h-4 mr-2" />
+                    {member.contact.phone}
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+        
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

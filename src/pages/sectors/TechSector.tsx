@@ -93,7 +93,7 @@ export default function TechSector() {
                 rel="noopener noreferrer" 
                 className="text-lg text-white/90 hover:text-white transition-colors duration-300 flex items-center gap-2"
               >
-                tomextech.hu
+                tomextech.com
                 <ChevronRight size={16} />
               </a>
             </motion.div>

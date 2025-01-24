@@ -314,5 +314,7 @@
     "allRighReserved": "Minden jog fenntartva",
     "privacyPolicy": "Adatvédelmi irányelvek",
     "termsOfService": "Szolgáltatási feltételek"
-  }
+  },
+  "cookieConsent": "Weboldalunkon sütiket használunk, hogy javítsuk az Ön élményét. A 'Rendben!' gombra kattintva elfogadja a sütik használatát.",
+  "cookieConsentApprove": "Rendben!"
 }

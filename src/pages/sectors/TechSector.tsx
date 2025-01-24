@@ -88,7 +88,7 @@ export default function TechSector() {
                 <Sparkles className="w-5 h-5" />
               </div>
               <a 
-                href="https://tomextech.hu" 
+                href="https://tomextech.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-lg text-white/90 hover:text-white transition-colors duration-300 flex items-center gap-2"

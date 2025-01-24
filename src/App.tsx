@@ -14,6 +14,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import NotFound from './pages/NotFound';
 import './i18n/config';
+import { useTranslation } from 'react-i18next';
 
 // Scroll to top component
 function ScrollToTop() {
@@ -28,6 +29,7 @@ function ScrollToTop() {
 
 // Main app content with scroll to top functionality
 function AppContent() {
+    const { t } = useTranslation();
   return (
     <>
       <ScrollToTop />
@@ -48,15 +50,39 @@ function AppContent() {
         </main>
         <Footer />
         <CookieConsent
-          location="bottom"
-          buttonText="Accept"
-          cookieName="tomex-cookie-consent"
-          style={{ background: '#21514E' }}
-          buttonStyle={{ background: '#5FC2C1', color: 'white', fontSize: '13px' }}
-          expires={150}
-        >
-          This website uses cookies to enhance the user experience.
-        </CookieConsent>
+      location="bottom"
+      buttonText={t("cookieConsentApprove")}
+      cookieName="tomex-cookie-consent"
+      style={{
+        background: 'rgba(0, 0, 0, 0.8)',
+        color: '#ffffff',
+        padding: '1rem',
+        fontSize: '14px',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+      }}
+      buttonStyle={{
+        background: '#10B981',
+        color: '#ffffff',
+        fontSize: '14px',
+        padding: '0.5rem 1rem',
+        borderRadius: '0.375rem',
+        border: 'none',
+        cursor: 'pointer',
+        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
+        transition: 'all 0.3s ease-in-out',
+      }}
+      buttonClasses="hover:bg-green-600 hover:scale-105"
+      expires={150}
+    >
+      <div className="flex items-center gap-2">
+        <span className="hidden sm:block">🍪</span>
+        <p>
+          {t("cookieConsent")}
+        </p>
+      </div>
+    </CookieConsent>
       </div>
     </>
   );

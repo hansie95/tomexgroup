@@ -278,5 +278,7 @@
     "allRighReserved": "All rights reserved",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
-  }
+  },
+  "cookieConsent": "We use cookies to enhance your experience on our website. By clicking 'Got it!', you agree to our use of cookies.",
+  "cookieConsentApprove": "Got it!"
 }

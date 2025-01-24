@@ -1,36 +1,36 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import { Dumbbell, Trophy, Users, Sparkles, ChevronRight, ShoppingBag, Medal, Shirt, Mail, Phone, MapPin } from 'lucide-react';
+import { Dumbbell, Trophy, Users, Sparkles, ChevronRight, ShoppingBag, Medal, Shirt, Mail, Phone } from 'lucide-react';
+import OfficeAddress from '../../components/OfficeAddress';
 
 const stats = [
   {
     value: "15K+",
-    label: "Products",
-    description: "Sports equipment and apparel"
+    label: "sport.ourProducts.products.header",
+    description: "sport.ourProducts.products.description"
   },
   {
     value: "100+",
-    label: "Teams",
-    description: "Partner sports clubs"
+    label: "sport.ourProducts.teams.header",
+    description: "sport.ourProducts.teams.description"
   },
   {
     value: "24h",
-    label: "Delivery",
-    description: "Express shipping service"
+    label: "sport.ourProducts.delivery.header",
+    description: "sport.ourProducts.delivery.description"
   }
 ];
 
 const teamMembers = [
   {
     name: "Máté Vízler",
-    role: "Sports Divison Sales Manager",
+    role: "sport.role.divisionSalesManager",
     image: "/team/vizler_mate.jpg",
     description: "Former professional athlete with 15+ years in sports equipment and team management.",
     contact: {
       email: "mate.vizler@tomex.hu",
-      phone: "+36 30 444 5555"
+      phone: "+36 70 605 3434"
     }
   }
 ];
@@ -105,15 +105,15 @@ export default function SportSector() {
             >
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Trophy className="w-5 h-5" />
-                <span>Official Puma Reseller</span>
+                <span>{t("sport.officialPumaReseller")}</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <ShoppingBag className="w-5 h-5" />
-                <span>Fan Shop Solutions</span>
+                <span>{t("sport.fanShopSolutions")}</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Shirt className="w-5 h-5" />
-                <span>Team Apparel</span>
+                <span>{t("sport.teamApparel")}</span>
               </div>
             </motion.div>
           </div>
@@ -124,7 +124,7 @@ export default function SportSector() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Our Products</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">{t("ourProducts")}</h2>
             <p className="text-lg text-gray-600 mb-12">{t('sport.products')}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -137,8 +137,8 @@ export default function SportSector() {
                 className="text-center p-6 bg-gray-50 rounded-lg"
               >
                 <div className="text-4xl font-bold text-tomex-dark-teal mb-2">{stat.value}</div>
-                <div className="text-lg font-semibold mb-2">{stat.label}</div>
-                <p className="text-gray-600">{stat.description}</p>
+                <div className="text-lg font-semibold mb-2">{t(stat.label)}</div>
+                <p className="text-gray-600">{t(stat.description)}</p>
               </motion.div>
             ))}
           </div>
@@ -149,25 +149,25 @@ export default function SportSector() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Product Categories</h2>
-            <p className="text-lg text-gray-600">Complete range of sports equipment and fan merchandise</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">{t("sport.productCategories.header")}</h2>
+            <p className="text-lg text-gray-600">{t("sport.productCategories.description")}</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 icon: Shirt,
-                title: "Team Apparel",
-                description: "Premium quality team uniforms and training wear from Puma."
+                title: "sport.productCategories.categories.teamApparel.header",
+                description: "sport.productCategories.categories.teamApparel.description"
               },
               {
                 icon: ShoppingBag,
-                title: "Fan Merchandise",
-                description: "Official team merchandise and supporter gear."
+                title: "sport.productCategories.categories.fanMerchandise.header",
+                description: "sport.productCategories.categories.fanMerchandise.description"
               },
               {
                 icon: Dumbbell,
-                title: "Sports Equipment",
-                description: "Professional equipment for training and competition."
+                title: "sport.productCategories.categories.sportsEquipment.header",
+                description: "sport.productCategories.categories.sportsEquipment.description"
               }
             ].map((category, index) => (
               <motion.div
@@ -178,8 +178,8 @@ export default function SportSector() {
                 className="bg-white p-6 rounded-lg shadow-lg"
               >
                 <category.icon className="w-12 h-12 text-tomex-light-teal mb-4" />
-                <h3 className="text-xl font-semibold mb-3">{category.title}</h3>
-                <p className="text-gray-600">{category.description}</p>
+                <h3 className="text-xl font-semibold mb-3">{t(category.title)}</h3>
+                <p className="text-gray-600">{t(category.description)}</p>
               </motion.div>
             ))}
           </div>
@@ -232,9 +232,9 @@ export default function SportSector() {
             >
               <Users className="w-16 h-16 text-tomex-light-teal mx-auto" />
             </motion.div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("meetOurTeam")}</h2>
             <p className="text-lg text-gray-600">
-              Our experienced professionals combine sports expertise with business acumen
+              {t("sport.meetOurTeam.description")}
             </p>
           </div>
           
@@ -256,8 +256,7 @@ export default function SportSector() {
                         </div>
                         <div className="p-6">
                           <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                          <p className="text-tomex-light-teal font-medium mb-3">{member.role}</p>
-                          <p className="text-gray-600 mb-4">{member.description}</p>
+                          <p className="text-tomex-light-teal font-medium mb-3">{t(member.role)}</p>
                           <div className="space-y-2">
                             <a
                               href={`mailto:${member.contact.email}`}
@@ -279,16 +278,7 @@ export default function SportSector() {
                     ))}
                   </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            className="mt-12 text-center"
-          >
-            <div className="inline-flex items-center justify-center space-x-2 text-gray-600">
-              <MapPin className="w-5 h-5 text-tomex-light-teal" />
-              <span>Budapest Office: 1107 Budapest, Száva utca 4/b</span>
-            </div>
-          </motion.div>
+         <OfficeAddress />
         </div>
       </section>
     </>

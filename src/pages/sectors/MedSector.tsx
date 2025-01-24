@@ -1,58 +1,68 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import { Stethoscope, ShieldCheck, Package, Sparkles, ChevronRight, HeartPulse, Microscope, Users, Mail, Phone, MapPin } from 'lucide-react';
+import { Stethoscope, ShieldCheck, Package, Sparkles, ChevronRight, HeartPulse, Microscope, Users, Mail, Phone } from 'lucide-react';
+import OfficeAddress from '../../components/OfficeAddress';
 
 const stats = [
   {
     value: "5K+",
-    label: "Products",
-    description: "Medical supplies and equipment"
+    label: "med.ourProducts.products.header",
+    description: "med.ourProducts.products.description"
   },
   {
     value: "99.9%",
-    label: "Accuracy",
-    description: "Order fulfillment rate"
+    label: "med.ourProducts.accuracy.header",
+    description: "med.ourProducts.accuracy.description"
   },
   {
     value: "24/7",
-    label: "Support",
-    description: "Emergency delivery service"
+    label: "med.ourProducts.support.header",
+    description: "med.ourProducts.support.description"
   }
 ];
 
 const teamMembers = [
   {
-    name: "Dr. András Kovács",
-    role: "Medical Director",
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=400",
-    description: "20+ years of experience in medical supplies and healthcare solutions.",
+    name: "Dániel Horváth",
+    role: "hotel.role.divisionSalesManager.name",
+    image: "/team/horvath_daniel.jpg",
+    description: "hotel.role.divisionSalesManager.description",
     contact: {
-      email: "andras.kovacs@tomexmed.hu",
-      phone: "+36 30 111 2222"
+      email: "daniel.horvath@szallodapro.hu",
+      phone: "+36 30 527 0059"
     }
   },
   {
-    name: "Katalin Szabó",
-    role: "Quality Assurance Manager",
-    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=400",
-    description: "Expert in medical product certification and quality control.",
+    name: "Máté Vízler",
+    role: "sport.role.divisionSalesManager",
+    image: "/team/vizler_mate.jpg",
+    description: "Former professional athlete with 15+ years in sports equipment and team management.",
     contact: {
-      email: "katalin.szabo@tomexmed.hu",
-      phone: "+36 30 222 3333"
+      email: "mate.vizler@tomex.hu",
+      phone: "+36 70 605 3434"
     }
   },
   {
-    name: "Tamás Nagy",
-    role: "Supply Chain Director",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400",
-    description: "Specialized in healthcare logistics and inventory management.",
+    name: "Tamás Farkas",
+    role: "team.role.ceo.position",
+    image: "/team/farkas_tamas.jpg",
+    description: "team.role.ceo.description",
     contact: {
-      email: "tamas.nagy@tomexmed.hu",
-      phone: "+36 30 333 4444"
+      email: "tamas.farkas@tomex.hu",
+      phone: "+36 30 665 4360"
     }
-  }
+  },
+  {
+    name: "Peter Podani Kovács",
+    role: "team.role.operational_director.position",
+    image: "/team/podani_peter.jpg",
+    description: "team.role.operational_director.description",
+    contact: {
+      email: "peter.podani@tomex.hu",
+      phone: "+36 70 197 9069"
+    }
+  },
 ];
 
 export default function MedSector() {
@@ -125,15 +135,15 @@ export default function MedSector() {
             >
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <ShieldCheck className="w-5 h-5" />
-                <span>Certified Products</span>
+                <span>{t("med.certifidedProducts")}</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <HeartPulse className="w-5 h-5" />
-                <span>Healthcare Grade</span>
+                <span>{t("med.healthCareGrade")}</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Package className="w-5 h-5" />
-                <span>Industrial Safety</span>
+                <span>{t("med.industrialSafety")}</span>
               </div>
             </motion.div>
           </div>
@@ -144,7 +154,7 @@ export default function MedSector() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Our Products</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">{t("ourProducts")}</h2>
             <p className="text-lg text-gray-600 mb-12">{t('med.products')}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -157,8 +167,8 @@ export default function MedSector() {
                 className="text-center p-6 bg-gray-50 rounded-lg"
               >
                 <div className="text-4xl font-bold text-tomex-dark-teal mb-2">{stat.value}</div>
-                <div className="text-lg font-semibold mb-2">{stat.label}</div>
-                <p className="text-gray-600">{stat.description}</p>
+                <div className="text-lg font-semibold mb-2">{t(stat.label)}</div>
+                <p className="text-gray-600">{t(stat.description)}</p>
               </motion.div>
             ))}
           </div>
@@ -169,25 +179,25 @@ export default function MedSector() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Product Categories</h2>
-            <p className="text-lg text-gray-600">Comprehensive range of medical and safety products</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">{t("med.productCategories.header")}</h2>
+            <p className="text-lg text-gray-600">{t("med.productCategories.description")}</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 icon: ShieldCheck,
-                title: "Protective Equipment",
-                description: "High-quality protective gloves and clothing for medical and industrial use."
+                title: "med.productCategories.categories.protectiveEquipent.header",
+                description: "med.productCategories.categories.protectiveEquipent.description"
               },
               {
                 icon: Microscope,
-                title: "Hygiene Products",
-                description: "Essential hygiene supplies for maintaining clean and safe environments."
+                title: "med.productCategories.categories.hygieneProducts.header",
+                description: "med.productCategories.categories.hygieneProducts.description"
               },
               {
                 icon: Package,
-                title: "Disposable Tools",
-                description: "Reliable disposable equipment meeting industry standards."
+                title: "med.productCategories.categories.disposableTools.header",
+                description: "med.productCategories.categories.disposableTools.description"
               }
             ].map((category, index) => (
               <motion.div
@@ -198,8 +208,8 @@ export default function MedSector() {
                 className="bg-white p-6 rounded-lg shadow-lg"
               >
                 <category.icon className="w-12 h-12 text-tomex-light-teal mb-4" />
-                <h3 className="text-xl font-semibold mb-3">{category.title}</h3>
-                <p className="text-gray-600">{category.description}</p>
+                <h3 className="text-xl font-semibold mb-3">{t(category.title)}</h3>
+                <p className="text-gray-600">{t(category.description)}</p>
               </motion.div>
             ))}
           </div>
@@ -252,9 +262,9 @@ export default function MedSector() {
             >
               <Users className="w-16 h-16 text-tomex-light-teal mx-auto" />
             </motion.div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("meetOurTeam")}</h2>
             <p className="text-lg text-gray-600">
-              Our experienced professionals ensure the highest quality medical supplies and safety equipment
+             {t("med.meetOurTeam.description")}
             </p>
           </div>
           
@@ -276,8 +286,7 @@ export default function MedSector() {
                         </div>
                         <div className="p-6">
                           <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                          <p className="text-tomex-light-teal font-medium mb-3">{member.role}</p>
-                          <p className="text-gray-600 mb-4">{member.description}</p>
+                          <p className="text-tomex-light-teal font-medium mb-3">{t(member.role)}</p>
                           <div className="space-y-2">
                             <a
                               href={`mailto:${member.contact.email}`}
@@ -299,16 +308,7 @@ export default function MedSector() {
                     ))}
                   </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            className="mt-12 text-center"
-          >
-            <div className="inline-flex items-center justify-center space-x-2 text-gray-600">
-              <MapPin className="w-5 h-5 text-tomex-light-teal" />
-              <span>Budapest Office: 1107 Budapest, Száva utca 4/b</span>
-            </div>
-          </motion.div>
+       <OfficeAddress />
         </div>
       </section>
     </>

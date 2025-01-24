@@ -1,76 +1,96 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import { Gift, TrendingUp, Users, Star, CheckCircle2, Package, Sparkles, ChevronRight, Mail, Phone, MapPin } from 'lucide-react';
+import { Gift, TrendingUp, Users, Star, CheckCircle2, Package, Sparkles, ChevronRight, Mail, Phone } from 'lucide-react';
+import OfficeAddress from '../../components/OfficeAddress';
 
 const stats = [
   {
     value: "10K+",
-    label: "Products",
-    description: "Unique promotional items in our catalog"
+    label: "gift.ourProducts.products.header",
+    description: "gift.ourProducts.products.description"
   },
   {
     value: "98%",
-    label: "Satisfaction",
-    description: "Client satisfaction rate"
+    label: "gift.ourProducts.satisfaction.header",
+    description: "gift.ourProducts.products.description"
   },
   {
     value: "24h",
-    label: "Response",
-    description: "Average response time"
+    label: "gift.ourProducts.response.header",
+    description: "gift.ourProducts.products.description"
   }
 ];
 
 const teamMembers = [
   {
     name: "Edit Remenyik",
-    role: "Gift Division Sales Manager",
+    role: "gift.role.divisionSalesManager",
     image: "/team/remenyik_edit.jpg",
     description: "10+ years of experience in promotional products and corporate gifts.",
     contact: {
       email: "edit.remenyik@tomex.hu",
-      phone: "+36 30 987 6543"
+      phone: "+36 30 868 2914"
     }
   },
   {
     name: "Éva Weidinger",
-    role: "Gift Division Sales Manager",
+    role: "gift.role.divisionSalesManager",
     image: "/team/weidinger_eva.jpg",
     description: "10+ years of experience in promotional products and corporate gifts.",
     contact: {
       email: "eva.weidinger@tomex.hu",
-      phone: "+36 30 987 6543"
+      phone: "+36 30 830 4678"
     }
   },
   {
     name: "Éva Szabó",
-    role: "Procurement Operations Manager",
+    role: "gift.role.operationManager",
     image: "/team/szabo_eva.jpg",
     description: "10+ years of experience in promotional products and corporate gifts.",
     contact: {
       email: "eva.szabo@tomex.hu",
-      phone: "+36 30 987 6543"
+      phone: "+36 20 526 5042"
     }
   },
   {
     name: "Kirill Gulyka",
-    role: "Gift Division Sales Manager",
+    role: "gift.role.divisionSalesManager",
     image: "/team/gulyka_kirill.jpg",
     description: "10+ years of experience in promotional products and corporate gifts.",
     contact: {
       email: "kirill.gulyka@tomex.hu",
-      phone: "+36 30 987 6543"
+      phone: "+36 30 443 3076"
     }
   },
   {
     name: "Noémi Tóth",
-    role: "Office Manager",
+    role: "gift.role.officeManager",
     image: "/team/toth_noemi.jpg",
     description: "10+ years of experience in promotional products and corporate gifts.",
     contact: {
       email: "noemi.toth@tomex.hu",
-      phone: "+36 30 987 6543"
+      phone: "+36 30 880 5862"
+    }
+  },
+  {
+    name: "Richárd Szabó",
+    role: "gift.role.logistic",
+    image: "/team/szabo_richard.jpg",
+    description: "10+ years of experience in promotional products and corporate gifts.",
+    contact: {
+      email: "richard.szabo@tomex.hu",
+      phone: "+36 20 432 5893"
+    }
+  },
+  {
+    name: "Márton Bodó Tóth",
+    role: "gift.role.logistic",
+    image: "/team/bodo_marton.jpg",
+    description: "10+ years of experience in promotional products and corporate gifts.",
+    contact: {
+      email: "marton.bodo@tomex.hu",
+      phone: "+36 30 089 9446"
     }
   }
 ];
@@ -145,15 +165,15 @@ export default function GiftSector() {
             >
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Package className="w-5 h-5" />
-                <span>100,000+ Products</span>
+                <span>{t("gift.hundredThousandProduct")}</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Star className="w-5 h-5" />
-                <span>Premium Quality</span>
+                <span>{t("gift.premiumQuality")}</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Gift className="w-5 h-5" />
-                <span>Custom Branding</span>
+                <span>{t("gift.customBranding")}</span>
               </div>
             </motion.div>
           </div>
@@ -164,7 +184,7 @@ export default function GiftSector() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Our Products</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">{t('ourProducts')}</h2>
             <p className="text-lg text-gray-600 mb-12">{t('gift.products')}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -177,8 +197,8 @@ export default function GiftSector() {
                 className="text-center p-6 bg-gray-50 rounded-lg"
               >
                 <div className="text-4xl font-bold text-tomex-dark-teal mb-2">{stat.value}</div>
-                <div className="text-lg font-semibold mb-2">{stat.label}</div>
-                <p className="text-gray-600">{stat.description}</p>
+                <div className="text-lg font-semibold mb-2">{t(stat.label)}</div>
+                <p className="text-gray-600">{t(stat.description)}</p>
               </motion.div>
             ))}
           </div>
@@ -194,9 +214,9 @@ export default function GiftSector() {
               whileInView={{ opacity: 1, y: 0 }}
               className="text-center mb-12"
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Branding Techniques</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("gift.ourBrandingTechnic.header")}</h2>
               <p className="text-lg text-gray-600">
-                Watch how we transform ordinary products into powerful branded merchandise
+                {t("gift.ourBrandingTechnic.description")}
               </p>
             </motion.div>
             
@@ -221,25 +241,25 @@ export default function GiftSector() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Branding Capabilities</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">{t("gift.brandingCapabilities.header")}</h2>
             <p className="text-lg text-gray-600">{t('gift.branding')}</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 icon: Gift,
-                title: "Custom Corporate Gifts",
-                description: "Tailored gift solutions that reflect your brand's values and message."
+                title: "gift.brandingCapabilities.customCorporateGifts.header",
+                description: "gift.brandingCapabilities.customCorporateGifts.description"
               },
               {
                 icon: TrendingUp,
-                title: "Brand Merchandise",
-                description: "High-quality promotional products that elevate your brand presence."
+                title: "gift.brandingCapabilities.brandMerchandise.header",
+                description: "gift.brandingCapabilities.brandMerchandise.description"
               },
               {
                 icon: Users,
-                title: "Event Merchandise",
-                description: "Memorable promotional items for conferences, trade shows, and corporate events."
+                title: "gift.brandingCapabilities.eventMerchandise.header",
+                description: "gift.brandingCapabilities.eventMerchandise.description"
               }
             ].map((service, index) => (
               <motion.div
@@ -250,8 +270,8 @@ export default function GiftSector() {
                 className="bg-white p-6 rounded-lg shadow-lg"
               >
                 <service.icon className="w-12 h-12 text-tomex-light-teal mb-4" />
-                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+                <h3 className="text-xl font-semibold mb-3">{t(service.title)}</h3>
+                <p className="text-gray-600">{t(service.description)}</p>
               </motion.div>
             ))}
           </div>
@@ -304,9 +324,9 @@ export default function GiftSector() {
             >
               <Users className="w-16 h-16 text-tomex-light-teal mx-auto" />
             </motion.div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("meetOurTeam")}</h2>
             <p className="text-lg text-gray-600">
-              Our experienced professionals are here to help you create impactful promotional solutions
+            {t("gift.meetOurTeam.description")}
             </p>
           </div>
           
@@ -328,8 +348,7 @@ export default function GiftSector() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                <p className="text-tomex-light-teal font-medium mb-3">{member.role}</p>
-                <p className="text-gray-600 mb-4">{member.description}</p>
+                <p className="text-tomex-light-teal font-medium mb-3">{t(member.role)}</p>
                 <div className="space-y-2">
                   <a
                     href={`mailto:${member.contact.email}`}
@@ -351,16 +370,7 @@ export default function GiftSector() {
           ))}
         </div>
         
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            className="mt-12 text-center"
-          >
-            <div className="inline-flex items-center justify-center space-x-2 text-gray-600">
-              <MapPin className="w-5 h-5 text-tomex-light-teal" />
-              <span>Budapest Office: 1107 Budapest, Száva utca 4/b</span>
-            </div>
-          </motion.div>
+        <OfficeAddress />
         </div>
       </section>
     </>

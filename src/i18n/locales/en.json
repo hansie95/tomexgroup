@@ -21,7 +21,7 @@
       "description": "We provide comprehensive solutions across promotional products, medical supplies, sports equipment, IT solutions, and hotel supplies."
     },
     "stats": {
-      "subsidiaries": "subsidiaries",
+      "subsidiaries": "division",
       "employees": "employees",
       "countries": "countries",
       "years": "years"
@@ -33,10 +33,20 @@
         "subtitle": "Meet the directors who lead our divisions with expertise and vision"
       }
     },
+    "subsidaires":{
+      "gift": "Premium promotional products and corporate gift",
+      "med": "Professional medical supplies and equipment",
+      "sport": "High-quality sports equipment and accessories",
+      "tech": "Enterprise IT solutions and services",
+      "hotel": "Premium hotel supplies and equipment"
+    },
     "contact": {
       "headquarters": "Headquarters"
     }
   },
+  "divisionOfficeAddress": "Budapest Office: 1107 Budapest, Száva utca 4/b",
+  "meetOurTeam": "Meet Our Team",
+  "ourProducts": "Our Products",
   "gift": {
     "description": "Our TomexGift division offers professional, tailor-made promotional gift solutions for companies, aiming to increase brand awareness, strengthen client relationships, and effectively communicate corporate identity.",
     "products": "Our product range includes over 100,000 gift items designed for everyday business needs and campaigns. These include practical office supplies, stylish mugs, bottles, and thermoses, textiles, as well as innovative technological tools suited to modern lifestyles.",
@@ -46,9 +56,77 @@
       "speed": "Speed and flexibility: We perform branding in-house, ensuring short turnaround times.",
       "uniqueness": "Uniqueness: We help create creative and eye-catching solutions to help our clients stand out in the market.",
       "quality": "Quality: We only offer products that enhance brand visibility through long-term use."
+    },
+    "hundredThousandProduct": "100,000+ Products",
+    "premiumQuality": "Premium Quality",
+    "customBranding": "Custom Branding",
+    "ourProducts":{
+      "products":{"header": "Products", "description": "Unique promotional items in our catalog"},
+      "satisfaction": {"header": "Satisfaction", "description": "Client satisfaction rate"},
+      "response":{"header": "Response", "description": "Average response time"}
+    },
+    "ourBrandingTechnic": {
+      "header": "Our Branding Techniques",
+      "description": "Watch how we transform ordinary products into powerful branded merchandise"
+    },
+    "brandingCapabilities": {
+      "header": "Branding Capabilities",
+      "customCorporateGifts": {
+        "header": "Custom Corporate Gifts",
+        "description": "Tailored gift solutions that reflect your brand's values and message."
+      },
+      "brandMerchandise": {
+        "header": "Brand Merchandise",
+        "description": "High-quality promotional products that elevate your brand presence."
+      },
+      "eventMerchandise": {
+        "header": "Event Merchandise",
+        "description": "Memorable promotional items for conferences, trade shows, and corporate events."
+      }
+    },
+    "meetOurTeam": {
+      "description": "Our experienced professionals are here to help you create impactful promotional solutions"
+    },
+    "role":{
+      "divisionSalesManager": "Gift Division Sales Manager",
+      "operationManager": "Procurement Operations Manager",
+      "officeManager": "Office Manager",
+      "logistic": "Logistic"
     }
   },
   "med": {
+    "certifidedProducts": "Certified Products",
+    "healthCareGrade": "Healthcare Grade",
+    "industrialSafety": "Industrial Safety",
+    "ourProducts":{
+      "products":{"header": "Products", "description": "Medical supplies and equipment"},
+      "accuracy": {"header": "Accuracy", "description": "Order fulfillment rate"},
+      "support":{"header": "Support", "description": "Emergency delivery service"}
+    },
+    "productCategories": {
+      "header": "Product Categories",
+      "description": "Comprehensive range of medical and safety products",
+      "categories": {
+        "protectiveEquipent": {
+          "header": "Protective Equipment",
+          "description": "High-quality protective gloves and clothing for medical and industrial use."
+        },
+        "hygieneProducts": {
+          "header": "Hygiene Products",
+          "description": "Essential hygiene supplies for maintaining clean and safe environments."
+        },
+        "disposableTools": {
+          "header": "Disposable Tools",
+          "description": "Reliable disposable equipment meeting industry standards."
+        }
+      }
+    },
+    "meetOurTeam": {
+      "description": " Our experienced professionals ensure the highest quality medical supplies and safety equipment"
+    },
+    "role":{
+      "divisionSalesManager": "Medical Division Sales Manager"
+    },
     "description": "Our TomexMed division offers disposable products and protective equipment for the healthcare and industrial sectors. Our primary goal is to support the safe and hygienic operations of factories, meat processing plants, and healthcare institutions.",
     "products": "Our product range includes protective gloves, clothing, hygiene products, and other disposable tools that comply with the strictest industry standards.",
     "whyUs": {
@@ -59,6 +137,38 @@
     }
   },
   "sport": {
+    "officialPumaReseller": "Official Puma Reseller",
+    "fanShopSolutions": "Fan Shop Solutions",
+    "teamApparel": "Team Apparel",
+    "ourProducts":{
+      "products":{"header": "Products", "description": "Sports equipment and apparel"},
+      "teams": {"header": "Teams", "description": "Partner sports clubs"},
+      "delivery":{"header": "Delivery", "description": "Express shipping service"}
+    },
+    "productCategories": {
+      "header": "Product Categories",
+      "description": "Complete range of sports equipment and fan merchandise",
+      "categories": {
+        "teamApparel": {
+          "header": "Team Apparel",
+          "description": "Premium quality team uniforms and training wear from Puma."
+        },
+        "fanMerchandise": {
+          "header": "Fan Merchandise",
+          "description": "Official team merchandise and supporter gear."
+        },
+        "sportsEquipment": {
+          "header": "Sports Equipment",
+          "description": "Professional equipment for training and competition."
+        }
+      }
+    },
+    "meetOurTeam": {
+      "description": "Our experienced professionals combine sports expertise with business acumen"
+    },
+    "role":{
+      "divisionSalesManager": "Sport Division Sales Manager"
+    },
     "description": "Our TomexSport division offers tailored solutions in the world of sports for both teams and fans. Our primary focus is designing fan shops for sports teams and producing custom products that reflect the identity of the respective club.",
     "products": "Our product range includes premium team apparel, fan merchandise, and equipment for sports and recovery. We take pride in being an official reseller of Puma, allowing us to outfit teams in professional brands that fully meet their needs.",
     "whyUs": {
@@ -69,6 +179,39 @@
     }
   },
   "hotel": {
+    "customBranding": "Custom Branding",
+    "daysDelivery": "2 days Delivery",
+    "europeanQuality": "European Quality",
+    "ourProducts":{
+      "products":{"header": "Products", "description": "Hotel supplies and amenities"},
+      "days": {"header": "Days", "description": "Custom branding delivery"},
+      "shipping":{"header": "Shipping", "description": "From Budapest warehouse"}
+    },
+    "productCategories": {
+      "header": "Product Categories",
+      "description": "Complete range of premium hotel supplies and amenities",
+      "categories": {
+        "roomAmenities": {
+          "header": "Room Amenities",
+          "description": "Premium quality hotel amenities and guest supplies."
+        },
+        "textilesAndLinens": {
+          "header": "Textiles & Linens",
+          "description": "High-quality textiles and linens for every room."
+        },
+        "hygieneProducts": {
+          "header": "Hygiene Products",
+          "description": "Professional-grade cleaning and hygiene supplies."
+        }
+      }
+    },
+    "meetOurTeam": {
+      "description": "Our experienced professionals ensure the highest quality hotel supplies and guest experience"
+    },
+    "role":{
+      "hotelDivisionLead":{"name": "Hotel Division Lead", "description": "20+ years of experience in hotel management and supplies."},
+      "divisionSalesManager": {"name": "Hotel Division Sales Manager", "description": "20+ years of experience in hotel management and supplies."}
+    },
     "description": "Our Szállodapro division offers professional solutions for accommodations, aiming to perfect the guest experience down to the finest details.",
     "products": "Our product portfolio includes premium-quality hotel amenities, textiles, hygiene products, cosmetics, and slippers. Thanks to our European manufacturing partnerships and substantial stock availability, our products can be fully customized to match a hotel's branding, including personalized logos, within just one month.",
     "whyUs": {
@@ -79,6 +222,27 @@
     }
   },
   "tech": {
+    "customDevelopment": "Custom Development",
+    "aiSolutions": "AI Solutions",
+    "itInfrastructure": "IT Infrastructure",
+    "ourServices":{
+      "header": "Our Services",
+      "customDevelopment":{"header": "Custom Development", "description": "Tailored web and application development solutions."},
+      "aiIntegration": {"header": "AI Integration", "description": "Implementation of AI and machine learning solutions."},
+      "itConsulting":{"header": "IT Consulting", "description": "Expert guidance for digital transformation."}
+    },
+    "stat": {
+      "projects":{"header": "Projects", "description": "Sports equipment and apparel"},
+      "uptime": {"header": "Uptime", "description": "Partner sports clubs"},
+      "response":{"header": "Respones", "description": "Express shipping service"}
+    },
+    "meetOurTeam": {
+      "description": "Our experienced professionals are here to help you with your digital transformation journey"
+    },
+    "role":{
+      "itLead":{"name": "IT Lead", "description": "7+ years of experience in IT solutions and digital transformation."},
+      "designer": {"name": "UI Designer", "description": "Expert in UX/UI designs"}
+    },
     "description": "Our TomexTech division offers professional digital solutions for businesses, helping companies establish a presence in the digital space, modernize outdated systems, and streamline their processes.",
     "services": "Our services include web development, system simplification and management, and comprehensive IT consulting. Leveraging our expertise in frontend and backend development, we provide end-to-end solutions, including website, application, and custom system development.",
     "whyUs": {
@@ -88,5 +252,31 @@
       "ai": "AI support: From implementing artificial intelligence to advisory services, we guide our clients in finding optimal solutions.",
       "maintenance": "Maintenance and operations: We not only develop but also ensure the continuous operation and improvement of our systems."
     }
+  },
+  "team": {
+    "role":{
+      "ceo": {"position": "CEO & Founder", "description": "Founded Tomex Group in 2021, leading the company's expansion across Europe."},
+      "operational_director": {"position": "Operaration Director", "description": "10+ years of experience in promotional products operational tasks"},
+      "logistic_director": {"position": "Logistic Director", "description": "20+ years of experience in medical supplies and healthcare solutions."},
+      "gift_division_director": {"position": "Gift Division Director", "description": "Former professional athlete with 15+ years in sports equipment and team management."},
+      "finance_director": {"position": "Finance Director", "description": "15+ years of experience in IT solutions and digital transformation."}
+    }
+  },
+  "footer":{
+    "description": "Your trusted partner in promotional products, medical supplies, sports equipment, IT solutions, and hotel supplies across Europe.",
+    "ourSectors": "Our Sectors",
+    "sectors": {
+      "gift": "Promotional Products",
+      "med": "Medical Supplies",
+      "sport": "Sports Equipment",
+      "tech": "IT Solutions",
+      "hotel": "Hotel Supplies"
+    },
+    "contactUs": "Contact Us",
+    "hungary": "Hungary",
+    "street": "street",
+    "allRighReserved": "All rights reserved",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
   }
 }

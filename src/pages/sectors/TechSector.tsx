@@ -1,46 +1,46 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import { Monitor, Sparkles, ChevronRight, Code, Brain, Cpu, Wrench, Globe, Laptop, Users, Mail, Phone, MapPin } from 'lucide-react';
+import { Monitor, Sparkles, ChevronRight, Code, Brain, Cpu, Wrench, Globe, Laptop, Users, Mail, Phone } from 'lucide-react';
+import OfficeAddress from '../../components/OfficeAddress';
 
 const stats = [
   {
     value: "200+",
-    label: "Projects",
-    description: "Successful IT implementations"
+    label: "tech.stat.projects.header",
+    description: "tech.stat.projects.description"
   },
   {
     value: "99.9%",
-    label: "Uptime",
-    description: "Service availability"
+    label: "tech.stat.uptime.header",
+    description: "tech.stat.uptime.description"
   },
   {
     value: "15min",
-    label: "Response",
-    description: "Average support response time"
+    label: "tech.stat.response.header",
+    description: "tech.stat.response.description"
   }
 ];
 
 const teamMembers = [
   {
     name: "Hans Johann Shcmidt",
-    role: "IT Lead",
-    image: "/team/hans_schmidt.jpg",
-    description: "7+ years of experience in IT solutions and digital transformation.",
+    role: "tech.role.itLead.name",
+    image: "/team/schmidt_hans.jpg",
+    description: "tech.role.itLead.description",
     contact: {
-      email: "hans.schmidt@tomextech.hu",
+      email: "hans.schmidt@tomex.hu",
       phone: "+36 20 331 4299"
     }
   },
   {
     name: "Csaba György",
-    role: "UI Designer",
+    role: "tech.role.designer.name",
     image: "/team/gyorgy_csaba.jpg",
-    description: "Expert in AI implementation and machine learning solutions.",
+    description: "tech.role.designer.description",
     contact: {
-      email: "anna.kovacs@tomextech.hu",
-      phone: "+36 30 234 5678"
+      email: "grafika@tomex.hu",
+      phone: "+36 20 931 4067"
     }
   }
 ];
@@ -115,15 +115,15 @@ export default function TechSector() {
             >
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Code className="w-5 h-5" />
-                <span>Custom Development</span>
+                <span>{t("tech.customDevelopment")}</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Brain className="w-5 h-5" />
-                <span>AI Solutions</span>
+                <span>{t("tech.aiSolutions")}</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Cpu className="w-5 h-5" />
-                <span>IT Infrastructure</span>
+                <span>{t("tech.itInfrastructure")}</span>
               </div>
             </motion.div>
           </div>
@@ -143,8 +143,8 @@ export default function TechSector() {
                 className="text-center p-6 bg-gray-50 rounded-lg"
               >
                 <div className="text-4xl font-bold text-tomex-dark-teal mb-2">{stat.value}</div>
-                <div className="text-lg font-semibold mb-2">{stat.label}</div>
-                <p className="text-gray-600">{stat.description}</p>
+                <div className="text-lg font-semibold mb-2">{t(stat.label)}</div>
+                <p className="text-gray-600">{t(stat.description)}</p>
               </motion.div>
             ))}
           </div>
@@ -155,25 +155,25 @@ export default function TechSector() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Our Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">{t("tech.ourServices.header")}</h2>
             <p className="text-lg text-gray-600">{t('tech.services')}</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 icon: Code,
-                title: "Custom Development",
-                description: "Tailored web and application development solutions."
+                title: "tech.ourServices.customDevelopment.header",
+                description: "tech.ourServices.customDevelopment.description"
               },
               {
                 icon: Brain,
-                title: "AI Integration",
-                description: "Implementation of AI and machine learning solutions."
+                title: "tech.ourServices.aiIntegration.header",
+                description: "tech.ourServices.aiIntegration.description"
               },
               {
                 icon: Laptop,
-                title: "IT Consulting",
-                description: "Expert guidance for digital transformation."
+                title: "tech.ourServices.itConsulting.header",
+                description: "tech.ourServices.itConsulting.description"
               }
             ].map((service, index) => (
               <motion.div
@@ -184,8 +184,8 @@ export default function TechSector() {
                 className="bg-white p-6 rounded-lg shadow-lg"
               >
                 <service.icon className="w-12 h-12 text-tomex-light-teal mb-4" />
-                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+                <h3 className="text-xl font-semibold mb-3">{t(service.title)}</h3>
+                <p className="text-gray-600">{t(service.description)}</p>
               </motion.div>
             ))}
           </div>
@@ -247,9 +247,9 @@ export default function TechSector() {
             >
               <Users className="w-16 h-16 text-tomex-light-teal mx-auto" />
             </motion.div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("meetOurTeam")}</h2>
             <p className="text-lg text-gray-600">
-              Our experienced professionals are here to help you with your digital transformation journey
+              {t("tech.meetOurTeam.description")}
             </p>
           </div>
           
@@ -271,8 +271,8 @@ export default function TechSector() {
                        </div>
                        <div className="p-6">
                          <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                         <p className="text-tomex-light-teal font-medium mb-3">{member.role}</p>
-                         <p className="text-gray-600 mb-4">{member.description}</p>
+                         <p className="text-tomex-light-teal font-medium mb-3">{t(member.role)}</p>
+                         <p className="text-gray-600 mb-4">{t(member.description)}</p>
                          <div className="space-y-2">
                            <a
                              href={`mailto:${member.contact.email}`}
@@ -294,16 +294,7 @@ export default function TechSector() {
                    ))}
                  </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            className="mt-12 text-center"
-          >
-            <div className="inline-flex items-center justify-center space-x-2 text-gray-600">
-              <MapPin className="w-5 h-5 text-tomex-light-teal" />
-              <span>Budapest Office: 1107 Budapest, Száva utca 4/b</span>
-            </div>
-          </motion.div>
+          <OfficeAddress />
         </div>
       </section>
     </>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Shield, Lock } from 'lucide-react';
@@ -35,8 +34,6 @@ export default function PrivacyPolicy() {
               <h2 className="text-2xl font-semibold text-tomex-dark-teal mb-4">2. Data We Collect</h2>
               <p className="text-gray-700 mb-4">We may collect, use, store and transfer different kinds of personal data about you, including:</p>
               <ul className="list-disc pl-6 mb-4 text-gray-700">
-                <li>Identity Data (name, title, date of birth)</li>
-                <li>Contact Data (billing address, email address, telephone numbers)</li>
                 <li>Technical Data (IP address, browser type and version, time zone setting)</li>
                 <li>Usage Data (information about how you use our website and services)</li>
                 <li>Marketing and Communications Data (your preferences in receiving marketing from us)</li>
@@ -85,7 +82,7 @@ export default function PrivacyPolicy() {
               </p>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-700">
-                  <strong>Email:</strong> privacy@tomexgroup.com<br />
+                  <strong>Email:</strong> info@tomex.hu<br />
                   <strong>Phone:</strong> +36 30 665 4360<br />
                   <strong>Address:</strong> 1107 Budapest, Száva utca 4/b, Hungary
                 </p>

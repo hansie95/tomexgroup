@@ -13,7 +13,9 @@ import {
   Monitor,
   Hotel,
   MapPin,
-  ChevronDown
+  ChevronDown,
+  Phone,
+  Mail
 } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
@@ -22,7 +24,7 @@ const subsidiaries = [
   {
     id: 'gift',
     name: 'Tomex Gift',
-    description: 'Premium promotional products and corporate gifts',
+    description: 'home.subsidaires.gift',
     image: 'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&q=80&w=1600',
     gradient: 'from-tomex-dark-teal/90 to-tomex-light-teal/80',
     icon: Gift,
@@ -32,7 +34,7 @@ const subsidiaries = [
   {
     id: 'med',
     name: 'Tomex Med',
-    description: 'Professional medical supplies and equipment',
+    description: 'home.subsidaires.med',
     image: 'https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&q=80&w=1600',
     gradient: 'from-tomex-dark-teal to-tomex-light-teal',
     icon: Stethoscope,
@@ -42,7 +44,7 @@ const subsidiaries = [
   {
     id: 'sport',
     name: 'Tomex Sport',
-    description: 'High-quality sports equipment and accessories',
+    description: 'home.subsidaires.sport',
     image: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=1600',
     gradient: 'from-tomex-dark-teal/85 via-tomex-light-teal/75 to-tomex-dark-teal/85',
     icon: Dumbbell,
@@ -52,7 +54,7 @@ const subsidiaries = [
   {
     id: 'tech',
     name: 'Tomex Tech',
-    description: 'Enterprise IT solutions and services',
+    description: 'home.subsidaires.tech',
     image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1600',
     gradient: 'from-tomex-light-teal/90 via-tomex-dark-teal/80 to-tomex-light-teal/90',
     icon: Monitor,
@@ -62,7 +64,7 @@ const subsidiaries = [
   {
     id: 'hotel',
     name: 'Szallodapro',
-    description: 'Premium hotel supplies and equipment',
+    description: 'home.subsidaires.hotel',
     image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1600',
     gradient: 'from-tomex-dark-teal/80 via-tomex-light-teal/70 to-tomex-dark-teal/80',
     icon: Hotel,
@@ -81,52 +83,52 @@ const stats = [
 const directors = [
   {
     name: "Tamás Farkas",
-    role: "CEO & Founder",
+    role: "team.role.ceo.position",
     image: "/team/farkas_tamas.jpg",
-    description: "Founded Tomex Group in 2021, leading the company's expansion across Europe.",
+    description: "team.role.ceo.description",
     contact: {
       email: "tamas.farkas@tomex.hu",
-      phone: "+36 30 111 0000"
+      phone: "+36 30 665 4360"
     }
   },
   {
-    name: "Peter Podani Kovács",
-    role: "Operaration Director",
+    name: "Peter Podani",
+    role: "team.role.operational_director.position",
     image: "/team/podani_peter.jpg",
-    description: "10+ years of experience in promotional products and corporate gifts.",
+    description: "team.role.operational_director.description",
     contact: {
       email: "peter.podani@tomex.hu",
-      phone: "+36 30 987 6543"
+      phone: "+36 70 197 9069"
     }
   },
   {
     name: "Gabor Andorka",
-    role: "Logistic Director",
+    role: "team.role.logistic_director.position",
     image: "/team/andorka_gabor.jpg",
-    description: "20+ years of experience in medical supplies and healthcare solutions.",
+    description: "team.role.logistic_director.description",
     contact: {
       email: "gabor.andorka@tomex.hu",
-      phone: "+36 30 111 2222"
+      phone: "+36 30 288 1763"
     }
   },
   {
     name: "Tamás Szabó",
-    role: "Gift Division Director",
+    role: "team.role.gift_division_director.position",
     image: "/team/szabo_tamas.jpg",
-    description: "Former professional athlete with 15+ years in sports equipment and team management.",
+    description: "team.role.gift_division_director.description",
     contact: {
       email: "tamas.szabo@tomex.hu",
-      phone: "+36 30 444 5555"
+      phone: "+36 30 141 2688"
     }
   },
   {
     name: "Judit Farkas",
-    role: "Finance Director",
+    role: "team.role.finance_director.position",
     image: "/team/farkas_judit.jpg",
-    description: "15+ years of experience in IT solutions and digital transformation.",
+    description: "team.role.finance_director.description",
     contact: {
       email: "judit.farkas@tomex.hu",
-      phone: "+36 30 123 4567"
+      phone: "+36 30 855 1806"
     }
   },
 ];
@@ -225,7 +227,7 @@ export default function Home() {
                     </div>
 
                       <p className="text-sm text-center text-white/90 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        {subsidiary.description}
+                        {t(subsidiary.description)}
                       </p>
                       <div className="flex items-center justify-center gap-2 text-sm font-medium">
                         <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -276,25 +278,44 @@ export default function Home() {
     <h2 className="text-2xl font-bold mb-4">{t('home.sections.leadership.title')}</h2>
     <p className="text-gray-600 mb-12">{t('home.sections.leadership.subtitle')}</p>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {directors.map((director, index) => (
-        <motion.div
-          key={director.name}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: index * 0.1 }}
-          className="bg-white rounded-lg shadow p-4 hover:shadow-md transition-shadow"
-        >
-          <img
-            src={director.image}
-            alt={director.name}
-            className="w-48 h-48 mx-auto rounded-full mb-4 object-cover object-top"
-          />
-          <h3 className="text-lg font-medium">{director.name}</h3>
-          <p className="text-tomex-light-teal text-sm mb-2">{director.role}</p>
-          <p className="text-gray-600 text-sm px-9">{director.description}</p>
-        </motion.div>
-      ))}
+    <div className="flex flex-wrap justify-center gap-10">
+      {directors.map((member, index) => (
+                     <motion.div
+                       key={member.name}
+                       initial={{ opacity: 0, y: 20 }}
+                       whileInView={{ opacity: 1, y: 0 }}
+                       transition={{ delay: index * 0.2 }}
+                       className="bg-white rounded-lg shadow-lg overflow-hidden w-80"
+                     >
+                       <div className="aspect-w-1 aspect-h-1">
+                         <img
+                           src={member.image}
+                           alt={member.name}
+                           className="w-full h-72 object-cover object-top"
+                         />
+                       </div>
+                       <div className="p-6">
+                         <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
+                         <p className="text-tomex-light-teal font-medium mb-3">{t(member.role)}</p>
+                         <div className="space-y-2">
+                           <a
+                             href={`mailto:${member.contact.email}`}
+                             className="flex items-center text-gray-600 hover:text-tomex-dark-teal transition-colors"
+                           >
+                             <Mail className="w-4 h-4 mr-2" />
+                             {member.contact.email}
+                           </a>
+                           <a
+                             href={`tel:${member.contact.phone}`}
+                             className="flex items-center text-gray-600 hover:text-tomex-dark-teal transition-colors"
+                           >
+                             <Phone className="w-4 h-4 mr-2" />
+                             {member.contact.phone}
+                           </a>
+                         </div>
+                       </div>
+                     </motion.div>
+                   ))}
     </div>
 
     <motion.div
@@ -306,11 +327,7 @@ export default function Home() {
       {t('home.contact.headquarters')}: 1107 Budapest, Száva utca 4/b
     </motion.div>
   </div>
-</section>
-
-
-      {/* Subsidiaries Section */}
-     
+</section>     
     </>
   );
 }

@@ -1,46 +1,46 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import { Hotel, Sparkles, ChevronRight, Bed, Clock, Box, ShieldCheck, Truck, Brush, Users, Mail, Phone, MapPin } from 'lucide-react';
+import { Hotel, Sparkles, ChevronRight, Bed, Clock, Box, ShieldCheck, Truck, Brush, Users, Mail, Phone } from 'lucide-react';
+import OfficeAddress from '../../components/OfficeAddress';
 
 const stats = [
   {
     value: "5K+",
-    label: "Products",
-    description: "Hotel supplies and amenities"
+    label: "hotel.ourProducts.products.header",
+    description: "hotel.ourProducts.products.description"
   },
   {
-    value: "30+",
-    label: "Days",
-    description: "Custom branding delivery"
+    value: "7+",
+    label: "hotel.ourProducts.days.header",
+    description: "hotel.ourProducts.days.description"
   },
   {
     value: "24h",
-    label: "Shipping",
-    description: "From Budapest warehouse"
+    label: "hotel.ourProducts.shipping.header",
+    description: "hotel.ourProducts.shipping.description"
   }
 ];
 
 const teamMembers = [
   {
     name: "Áron Konkoly",
-    role: "Hotel Division Lead",
+    role: "hotel.role.hotelDivisionLead.name",
     image: "/team/konkoly_aron.jpg",
-    description: "20+ years of experience in hotel management and supplies.",
+    description: "hotel.role.hotelDivisionLead.description",
     contact: {
       email: "aron.konkoly@szallodapro.hu",
-      phone: "+36 30 777 8888"
+      phone: "+36 20 393 8072"
     }
   },
   {
     name: "Dániel Horváth",
-    role: "Hotel Division Sales Manager",
+    role: "hotel.role.divisionSalesManager.name",
     image: "/team/horvath_daniel.jpg",
-    description: "20+ years of experience in hotel management and supplies.",
+    description: "hotel.role.divisionSalesManager.description",
     contact: {
       email: "daniel.horvath@szallodapro.hu",
-      phone: "+36 30 777 8888"
+      phone: "+36 30 527 0059"
     }
   }
 ];
@@ -115,15 +115,15 @@ export default function HotelSector() {
             >
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Brush className="w-5 h-5" />
-                <span>Custom Branding</span>
+                <span>{t("hotel.customBranding")}</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Clock className="w-5 h-5" />
-                <span>1-Month Delivery</span>
+                <span>{t("hotel.daysDelivery")}</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <ShieldCheck className="w-5 h-5" />
-                <span>European Quality</span>
+                <span>{t("hotel.europeanQuality")}</span>
               </div>
             </motion.div>
           </div>
@@ -134,7 +134,7 @@ export default function HotelSector() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Our Products</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">{t("ourProducts")}</h2>
             <p className="text-lg text-gray-600 mb-12">{t('hotel.products')}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -147,8 +147,8 @@ export default function HotelSector() {
                 className="text-center p-6 bg-gray-50 rounded-lg"
               >
                 <div className="text-4xl font-bold text-tomex-dark-teal mb-2">{stat.value}</div>
-                <div className="text-lg font-semibold mb-2">{stat.label}</div>
-                <p className="text-gray-600">{stat.description}</p>
+                <div className="text-lg font-semibold mb-2">{t(stat.label)}</div>
+                <p className="text-gray-600">{t(stat.description)}</p>
               </motion.div>
             ))}
           </div>
@@ -159,25 +159,25 @@ export default function HotelSector() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Product Categories</h2>
-            <p className="text-lg text-gray-600">Complete range of premium hotel supplies and amenities</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">{t("hotel.productCategories.header")}</h2>
+            <p className="text-lg text-gray-600">{t("hotel.productCategories.description")}</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 icon: Bed,
-                title: "Room Amenities",
-                description: "Premium quality hotel amenities and guest supplies."
+                title: "hotel.productCategories.categories.roomAmenities.header",
+                description: "hotel.productCategories.categories.roomAmenities.description"
               },
               {
                 icon: Box,
-                title: "Textiles & Linens",
-                description: "High-quality textiles and linens for every room."
+                title: "hotel.productCategories.categories.textilesAndLinens.header",
+                description: "hotel.productCategories.categories.textilesAndLinens.description"
               },
               {
                 icon: ShieldCheck,
-                title: "Hygiene Products",
-                description: "Professional-grade cleaning and hygiene supplies."
+                title: "hotel.productCategories.categories.hygieneProducts.header",
+                description: "hotel.productCategories.categories.hygieneProducts.description"
               }
             ].map((category, index) => (
               <motion.div
@@ -188,8 +188,8 @@ export default function HotelSector() {
                 className="bg-white p-6 rounded-lg shadow-lg"
               >
                 <category.icon className="w-12 h-12 text-tomex-light-teal mb-4" />
-                <h3 className="text-xl font-semibold mb-3">{category.title}</h3>
-                <p className="text-gray-600">{category.description}</p>
+                <h3 className="text-xl font-semibold mb-3">{t(category.title)}</h3>
+                <p className="text-gray-600">{t(category.description)}</p>
               </motion.div>
             ))}
           </div>
@@ -242,9 +242,9 @@ export default function HotelSector() {
             >
               <Users className="w-16 h-16 text-tomex-light-teal mx-auto" />
             </motion.div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("meetOurTeam")}</h2>
             <p className="text-lg text-gray-600">
-              Our experienced professionals ensure the highest quality hotel supplies and guest experience
+              {t("hotel.meetOurTeam.description")}
             </p>
           </div>
           
@@ -266,8 +266,7 @@ export default function HotelSector() {
                         </div>
                         <div className="p-6">
                           <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                          <p className="text-tomex-light-teal font-medium mb-3">{member.role}</p>
-                          <p className="text-gray-600 mb-4">{member.description}</p>
+                          <p className="text-tomex-light-teal font-medium mb-3">{t(member.role)}</p>
                           <div className="space-y-2">
                             <a
                               href={`mailto:${member.contact.email}`}
@@ -289,16 +288,7 @@ export default function HotelSector() {
                     ))}
                   </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            className="mt-12 text-center"
-          >
-            <div className="inline-flex items-center justify-center space-x-2 text-gray-600">
-              <MapPin className="w-5 h-5 text-tomex-light-teal" />
-              <span>Budapest Office: 1107 Budapest, Száva utca 4/b</span>
-            </div>
-          </motion.div>
+         <OfficeAddress />
         </div>
       </section>
     </>

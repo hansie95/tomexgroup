@@ -1,4 +1,3 @@
-import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { ScrollText, AlertCircle } from 'lucide-react';
@@ -97,7 +96,7 @@ export default function TermsOfService() {
               </p>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-700">
-                  <strong>Email:</strong> legal@tomexgroup.com<br />
+                  <strong>Email:</strong> info@tomex.hu<br />
                   <strong>Phone:</strong> +36 30 665 4360<br />
                   <strong>Address:</strong> 1107 Budapest, Száva utca 4/b, Hungary
                 </p>

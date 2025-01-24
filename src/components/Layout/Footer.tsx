@@ -7,6 +7,7 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
 // Fix for default marker icon in react-leaflet
+
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
@@ -15,16 +16,16 @@ L.Icon.Default.mergeOptions({
 });
 
 const COMPANY_LOCATION = {
-  lat: 47.481667,
-  lng: 19.108889,
+  lat: 47.469861,
+  lng: 19.122633,
 };
 
 const sectors = [
-  { name: 'Promotional Products', path: '/sectors/gift' },
-  { name: 'Medical Supplies', path: '/sectors/med' },
-  { name: 'Sports Equipment', path: '/sectors/sport' },
-  { name: 'IT Solutions', path: '/sectors/tech' },
-  { name: 'Hotel Supplies', path: '/sectors/hotel' },
+  { name: 'footer.sectors.gift', path: '/sectors/gift' },
+  { name: 'footer.sectors.med', path: '/sectors/med' },
+  { name: 'footer.sectors.sport', path: '/sectors/sport' },
+  { name: 'footer.sectors.tech', path: '/sectors/tech' },
+  { name: 'footer.sectors.hotel', path: '/sectors/hotel' },
 ];
 
 // Custom map style with brand colors
@@ -59,14 +60,13 @@ export const Footer: React.FC = () => {
               <span className="text-2xl font-bold">Tomex Group</span>
             </div>
             <p className="text-gray-300 max-w-sm">
-              Your trusted partner in promotional products, medical supplies, sports equipment,
-              IT solutions, and hotel supplies across Europe.
+            {t("footer.description")}
             </p>
           </div>
 
           {/* Sectors Navigation */}
           <div className="space-y-6">
-            <h3 className="text-xl font-semibold mb-4">Our Sectors</h3>
+            <h3 className="text-xl font-semibold mb-4">{t("footer.ourSectors")}</h3>
             <ul className="space-y-3">
               {sectors.map((sector) => (
                 <li key={sector.path}>
@@ -74,7 +74,7 @@ export const Footer: React.FC = () => {
                     to={sector.path}
                     className="text-gray-300 hover:text-tomex-light-teal transition-colors"
                   >
-                    {sector.name}
+                    {t(sector.name)}
                   </Link>
                 </li>
               ))}
@@ -83,14 +83,14 @@ export const Footer: React.FC = () => {
 
           {/* Contact Information */}
           <div className="space-y-6">
-            <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+            <h3 className="text-xl font-semibold mb-4">{t("footer.contactUs")}</h3>
             <div className="space-y-4">
               <a
                 href="mailto:info@tomexgroup.com"
                 className="flex items-center space-x-3 text-gray-300 hover:text-tomex-light-teal transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                <span>info@tomexgroup.com</span>
+                <span>info@tomex.hu</span>
               </a>
               <a
                 href="tel:+36306654360"
@@ -101,7 +101,7 @@ export const Footer: React.FC = () => {
               </a>
               <div className="flex items-center space-x-3 text-gray-300">
                 <MapPin className="w-5 h-5 flex-shrink-0" />
-                <span>Hungary, 1107 Budapest száva utca 4/b</span>
+                <span>{`${t("footer.hungary")}, 1107 Budapest Száva ${t("footer.street")} 4/b`}</span>
               </div>
             </div>
           </div>
@@ -134,21 +134,19 @@ export const Footer: React.FC = () => {
         <div className="mt-12 pt-8 border-t border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} Tomex Group. All rights reserved.
+              © {new Date().getFullYear()} Tomex Group. {t("footer.allRighReserved")}
             </p>
             <div className="flex space-x-6">
               <Link to="/privacy" className="text-sm text-gray-400 hover:text-tomex-light-teal transition-colors">
-                Privacy Policy
+              {t("footer.privacyPolicy")}
               </Link>
               <Link to="/terms" className="text-sm text-gray-400 hover:text-tomex-light-teal transition-colors">
-                Terms of Service
+              {t("footer.termsOfService")}
               </Link>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Add custom styles for map */}
       <style>
         {`
           .leaflet-container {

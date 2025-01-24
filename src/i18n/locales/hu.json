@@ -21,7 +21,7 @@
       "description": "Átfogó megoldásokat kínálunk a promóciós termékek, orvosi eszközök, sportfelszerelések, IT megoldások és szállodai kellékek területén."
     },
     "stats": {
-      "subsidiaries": "leányvállalat",
+      "subsidiaries": "divízió",
       "employees": "alkalmazott",
       "countries": "ország",
       "years": "év"
@@ -30,13 +30,23 @@
       "companies": "Vállalataink",
       "leadership": {
         "title": "Vezetőségünk",
-        "subtitle": "Ismerje meg igazgatóinkat, akik szakértelemmel és jövőképpel vezetik divízióinkat"
+        "subtitle": "Ismerje meg igazgatóinkat, akik szakértelemmel és jövőképpel vezetik ágazatainkat"
       }
+    },
+    "subsidiaries": {
+      "gift": "Prémium reklámajándékok és vállalati ajándékok",
+      "med": "Professzionális orvostechnikai kellékek és eszközök",
+      "sport": "Kiváló minőségű sportfelszerelések és kiegészítők",
+      "tech": "Vállalati IT megoldások és szolgáltatások",
+      "hotel": "Prémium szállodai kellékek és eszközök"
     },
     "contact": {
       "headquarters": "Központi iroda"
     }
   },
+  "divisionOfficeAddress": "Budapesti iroda: 1107 Budapest, Száva utca 4/b",
+  "meetOurTeam": "Ismerje meg csapatunkat",
+  "ourProducts": "Termékeink",
   "gift": {
     "description": "A TomexGift üzletágunk cégek számára kínál professzionális, egyedi reklámajándék megoldásokat, amelyek célja a márkaismertség növelése, az ügyfélkapcsolatok erősítése és a vállalati arculat erőteljes kommunikációja.",
     "products": "Termékkínálatunk több 100.000 db ajándéktárgyat foglal magában, az üzleti mindennapokra és kampányokra szabva. Ide tartoznak például a praktikus irodai kellékek, dizájnos bögrék, kulacsok és termoszok, textíliák, valamint a modern életvitelhez kapcsolódó innovatív technológiai eszközök.",
@@ -46,9 +56,77 @@
       "speed": "Gyorsaság és rugalmasság: Az emblémázást helyben végezzük, így rövid határidővel dolgozunk.",
       "uniqueness": "Egyediség: Segítünk kreatív és figyelemfelkeltő megoldások kialakításában, hogy ügyfeleink kiemelkedjenek a piacon.",
       "quality": "Minőség: Csak olyan termékeket kínálunk, amelyek a hosszú távú használat révén növelik a márka láthatóságát."
+    },
+    "hundredThousandProduct": "100 000+ termék",
+    "premiumQuality": "Prémium minőség",
+    "customBranding": "Egyedi emblémázás",
+    "ourProducts": {
+      "products": {"header": "Termékek", "description": "Egyedi reklámtárgyak a katalógusunkban"},
+      "satisfaction": {"header": "Elégedettség", "description": "Ügyfél elégedettségi arány"},
+      "response": {"header": "Válaszidő", "description": "Átlagos válaszidő"}
+    },
+    "ourBrandingTechnic": {
+      "header": "Emblémázás technikáink",
+      "description": "Nézze meg, hogyan alakítunk át hétköznapi termékeket erőteljes márkázott árucikkekké"
+    },
+    "brandingCapabilities": {
+      "header": "Emblémázási lehetőségek",
+      "customCorporateGifts": {
+        "header": "Egyedi vállalati ajándékok",
+        "description": "Személyre szabott ajándékmegoldások, amelyek tükrözik a márka értékeit és üzenetét."
+      },
+      "brandMerchandise": {
+        "header": "Emblémázott árucikkek",
+        "description": "Kiváló minőségű reklámtárgyak, amelyek erősítik a márka jelenlétét."
+      },
+      "eventMerchandise": {
+        "header": "Rendezvény árucikkek",
+        "description": "Emlékezetes reklámtárgyak konferenciákra, szakkiállításokra és vállalati rendezvényekre."
+      }
+    },
+    "meetOurTeam": {
+      "description": "Tapasztalt szakembereink segítenek hatásos reklámajándékok létrehozásában"
+    },
+    "role": {
+      "divisionSalesManager": "Gift divízió, értékesítési menedzser",
+      "operationManager": "Beszerzés",
+      "officeManager": "Irodavezető",
+      "logistic": "Logisztika"
     }
   },
   "med": {
+    "certifidedProducts": "Tanúsított termékek",
+    "healthCareGrade": "Egészségügyi minőség",
+    "industrialSafety": "Ipari biztonság",
+    "ourProducts": {
+      "products": {"header": "Termékek", "description": "Orvosi kellékek és eszközök"},
+      "accuracy": {"header": "Pontosság", "description": "Megrendelések teljesítési aránya"},
+      "support": {"header": "Támogatás", "description": "Sürgősségi szállítási szolgáltatás"}
+    },
+    "productCategories": {
+      "header": "Termékkategóriák",
+      "description": "Átfogó orvosi és biztonsági termékkínálat",
+      "categories": {
+        "protectiveEquipent": {
+          "header": "Védőfelszerelések",
+          "description": "Kiváló minőségű védőkesztyűk és ruházat orvosi és ipari felhasználásra."
+        },
+        "hygieneProducts": {
+          "header": "Higiéniai termékek",
+          "description": "Alapvető higiéniai kellékek tiszta és biztonságos környezet fenntartásához."
+        },
+        "disposableTools": {
+          "header": "Eldobható eszközök",
+          "description": "Megbízható, ipari szabványoknak megfelelő eldobható felszerelések."
+        }
+      }
+    },
+    "meetOurTeam": {
+      "description": "Tapasztalt szakembereink biztosítják a legmagasabb minőségű orvosi kellékeket és biztonsági felszereléseket"
+    },
+    "role": {
+      "divisionSalesManager": "Orvostechnikai divízió, értékesítési menedzser"
+    },
     "description": "A TomexMed üzletágunk az egészségügyi és ipari szektorok számára kínál egyszer használatos termékeket és munkavédelmi felszereléseket. Fő célunk a gyárak, húsüzemek és egészségügyi intézmények biztonságos és higiénikus működésének támogatása.",
     "products": "Termékkínálatunk tartalmaz védőkesztyűket, védőruházatot, higiéniai termékeket és egyéb egyszer használatos eszközöket, amelyek megfelelnek a legszigorúbb iparági előírásoknak.",
     "whyUs": {
@@ -59,6 +137,38 @@
     }
   },
   "sport": {
+    "officialPumaReseller": "Hivatalos Puma viszonteladó",
+    "fanShopSolutions": "Szurkolói bolt megoldások",
+    "teamApparel": "Csapatruházat",
+    "ourProducts": {
+      "products": {"header": "Termékek", "description": "Sportfelszerelések és ruházat"},
+      "teams": {"header": "Csapatok", "description": "Partner sportklubok"},
+      "delivery": {"header": "Kiszállítás", "description": "Expressz szállítási szolgáltatás"}
+    },
+    "productCategories": {
+      "header": "Termékkategóriák",
+      "description": "Teljes sportfelszerelés- és szurkolói termékkínálat",
+      "categories": {
+        "teamApparel": {
+          "header": "Csapatruházat",
+          "description": "Prémium minőségű csapatmezek és edzőruházat a Puma-tól."
+        },
+        "fanMerchandise": {
+          "header": "Szurkolói termékek",
+          "description": "Hivatalos csapat termékek és szurkolói felszerelések."
+        },
+        "sportsEquipment": {
+          "header": "Sportfelszerelések",
+          "description": "Professzionális felszerelések edzéshez és versenyzéshez."
+        }
+      }
+    },
+    "meetOurTeam": {
+      "description": "Tapasztalt szakembereink egyesítik a sport szakértelmet az üzleti tudással"
+    },
+    "role": {
+      "divisionSalesManager": "Sport divízió, értékesítési menedzser"
+    },
     "description": "A TomexSport üzletág a sport világában kínál testreszabott megoldásokat csapatok és szurkolók számára egyaránt. Fő fókuszunk a sportcsapatok szurkolói boltjainak kialakítása és egyedi termékek gyártatása, melyek az adott klub arculatát tükrözik.",
     "products": "Termékkínálatunkban megtalálhatók a prémium csapatruházatok, szurkolói kellékek, valamint sportoláshoz és regenerációhoz szükséges eszközök. Büszkék vagyunk arra, hogy a Puma hivatalos viszonteladói vagyunk, így csapatokat professzionális márkába öltöztethetünk, maximálisan megfelelve az igényeiknek.",
     "whyUs": {
@@ -69,6 +179,45 @@
     }
   },
   "hotel": {
+    "customBranding": "Egyedi emblémázás",
+    "daysDelivery": "2 napos kiszállítás",
+    "europeanQuality": "Európai minőség",
+    "ourProducts": {
+      "products": {"header": "Termékek", "description": "Szállodai kellékek és felszerelések"},
+      "days": {"header": "Napok", "description": "Egyedi emblémázás kiszállítása"},
+      "shipping": {"header": "Szállítás", "description": "Budapesti raktárból"}
+    },
+    "productCategories": {
+      "header": "Termékkategóriák",
+      "description": "Prémium szállodai kellékek és felszerelések teljes kínálata",
+      "categories": {
+        "roomAmenities": {
+          "header": "Szobai kellékek",
+          "description": "Prémium minőségű szállodai kellékek és vendégellátási eszközök."
+        },
+        "textilesAndLinens": {
+          "header": "Textíliák és ágyneműk",
+          "description": "Kiváló minőségű textíliák és ágyneműk minden szobához."
+        },
+        "hygieneProducts": {
+          "header": "Higiéniai termékek",
+          "description": "Professzionális minőségű tisztító- és higiéniai kellékek."
+        }
+      }
+    },
+    "meetOurTeam": {
+      "description": "Tapasztalt szakembereink biztosítják a legmagasabb színvonalú szállodai kellékeket és vendégélményt"
+    },
+    "role": {
+      "hotelDivisionLead": {
+        "name": "Szálloda divízió, vezetője",
+        "description": "20+ év tapasztalat szállodai menedzsmentben és kellékek biztosításában."
+      },
+      "divisionSalesManager": {
+        "name": "Szálloda divízió, értékesítési menedzser",
+        "description": "20+ év tapasztalat szállodai menedzsmentben és kellékek biztosításában."
+      }
+    },
     "description": "A Szállodapro üzletágunk szálláshelyek számára kínál professzionális megoldásokat, amelyek célja, hogy a vendégélményt az utolsó részletekig tökéletessé tegyük.",
     "products": "Termékportfóliónkba tartoznak a prémium minőségű szállodai bekészítések, textíliák, higiéniai termékek, kozmetikumok és papucsok. Európai gyártói kapcsolatainknak és jelentős raktárkészletünknek köszönhetően termékeink akár 1 hónap alatt teljesen a szálloda arculatához szabhatók, beleértve az egyedi logózást is.",
     "whyUs": {
@@ -79,6 +228,42 @@
     }
   },
   "tech": {
+    "customDevelopment": "Egyedi fejlesztés",
+    "aiSolutions": "Mesterséges intelligencia megoldások",
+    "itInfrastructure": "IT infrastruktúra",
+    "ourServices": {
+      "header": "Szolgáltatásaink",
+      "customDevelopment": {
+        "header": "Egyedi fejlesztés",
+        "description": "Személyre szabott webes és alkalmazásfejlesztési megoldások."
+      },
+      "aiIntegration": {
+        "header": "AI integráció",
+        "description": "Mesterséges intelligencia és gépi tanulási megoldások megvalósítása."
+      },
+      "itConsulting": {
+        "header": "IT tanácsadás",
+        "description": "Szakértői útmutatás a digitális átalakuláshoz."
+      }
+    },
+    "stat": {
+      "projects": {"header": "Projektek", "description": "Sportfelszerelések és ruházat"},
+      "uptime": {"header": "Üzemidő", "description": "Partner sportklubok"},
+      "response": {"header": "Válaszidő", "description": "Expressz szállítási szolgáltatás"}
+    },
+    "meetOurTeam": {
+      "description": "Tapasztalt szakembereink segítenek a digitális átalakulási útján"
+    },
+    "role": {
+      "itLead": {
+        "name": "IT vezető",
+        "description": "7+ év tapasztalat IT megoldás tervezésben és digitális átalakulásban."
+      },
+      "designer": {
+        "name": "UI tervező",
+        "description": "Szakértő UX/UI tervezésben"
+      }
+    },
     "description": "A TomexTech üzletágunk vállalkozások számára kínál professzionális digitális megoldásokat, amelyek segítenek a cégeknek megjelenni a digitális térben, modernizálni régi rendszereiket és hatékonyabbá tenni folyamataikat.",
     "services": "Szolgáltatásaink magukban foglalják a webfejlesztést, a rendszerek egyszerűsítését és üzemeltetését, valamint teljes körű IT-tanácsadást. Frontend és backend fejlesztői szakértelmünk révén teljes körű megoldásokat kínálunk, beleértve a weboldalak, alkalmazások és egyedi rendszerek fejlesztését.",
     "whyUs": {
@@ -88,5 +273,46 @@
       "ai": "AI-támogatás: A mesterséges intelligencia bevezetésétől a tanácsadásig végigkísérjük ügyfeleinket, hogy megtalálják az optimális megoldásokat.",
       "maintenance": "Karbantartás és üzemeltetés: Nemcsak fejlesztünk, hanem gondoskodunk rendszereink folyamatos működéséről és fejlesztéséről is."
     }
+  },
+  "team": {
+  "role": {
+    "ceo": {
+      "position": "CEO & Alapító",
+      "description": "2021-ben alapította a Tomex Group-ot, és vezeti a vállalat európai terjeszkedését."
+    },
+    "operational_director": {
+      "position": "Operatív igazgató",
+      "description": "10+ év tapasztalat reklámajándékok operatív feladataiban."
+    },
+    "logistic_director": {
+      "position": "Logisztikai igazgató",
+      "description": "20+ év tapasztalat orvosi kellékek és egészségügyi megoldások terén."
+    },
+    "gift_division_director": {
+      "position": "Gift divízió igazgató",
+      "description": "Egykori profi sportoló, 15+ év tapasztalattal a sportfelszerelések és csapatmenedzsment területén."
+    },
+    "finance_director": {
+      "position": "Pénzügyi igazgató",
+      "description": "15+ év tapasztalat IT megoldásokban és digitális átalakulásban."
+    }
+  }
+},
+  "footer": {
+    "description": "Az Ön megbízható partnere reklámajándékok, orvosi kellékek, sportfelszerelések, IT megoldások és szállodai kellékek terén Európa-szerte.",
+    "ourSectors": "Ágazataink",
+    "sectors": {
+      "gift": "Reklámajándékok",
+      "med": "Orvosi kellékek",
+      "sport": "Sportfelszerelések",
+      "tech": "IT megoldások",
+      "hotel": "Szállodai kellékek"
+    },
+    "contactUs": "Kapcsolat",
+    "hungary": "Magyarország",
+    "street": "utca",
+    "allRighReserved": "Minden jog fenntartva",
+    "privacyPolicy": "Adatvédelmi irányelvek",
+    "termsOfService": "Szolgáltatási feltételek"
   }
 }

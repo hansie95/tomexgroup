@@ -49,7 +49,7 @@ const subsidiaries = [
     gradient: 'from-tomex-dark-teal/85 via-tomex-light-teal/75 to-tomex-dark-teal/85',
     icon: Dumbbell,
     route: '/sectors/sport',
-    logo: '/logos/tomex_med_logo.png'
+    logo: '/logos/tomexsport.png'
   },
   {
     id: 'tech',

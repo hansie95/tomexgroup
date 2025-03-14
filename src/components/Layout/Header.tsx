@@ -49,7 +49,7 @@ export const Header: React.FC = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-2">
             {navigationLinks.map(({ path, label }) => (
                 <Link
                   key={path}
@@ -70,7 +70,7 @@ export const Header: React.FC = () => {
             <div className="relative">
               <button
                 onClick={toggleLanguageMenu}
-                className="flex items-center text-gray-600 hover:text-tomex-dark-teal transition-all duration-300 relative group py-2"
+                className="flex items-center text-gray-600 ml-2 hover:text-tomex-dark-teal transition-all duration-300 relative group py-2"
               >
                 <Globe size={20} className="mr-1" />
                 <span>{i18n.language.toUpperCase()}</span>

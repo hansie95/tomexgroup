@@ -16,6 +16,7 @@ const navigationLinks = [
   { path: '/sectors/sport', label: 'nav.sport' },
   { path: '/sectors/tech', label: 'nav.tech' },
   { path: '/sectors/hotel', label: 'nav.hotel' },
+  { path: '/', label: 'nav.group' },
 ];
 
 export const Header: React.FC = () => {
@@ -50,24 +51,22 @@ export const Header: React.FC = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navigationLinks.map(({ path, label }) => (
-              <Link
-                key={path}
-                to={path}
-                className={`relative group py-2 transition-all duration-300 ${
-                  isActiveRoute(path)
-                    ? 'text-tomex-light-teal font-semibold'
-                    : 'text-gray-600 hover:text-tomex-dark-teal'
-                }`}
-              >
-                {t(label)}
-                <span 
-                  className={`absolute bottom-0 left-0 w-0 h-0.5 bg-tomex-light-teal transition-all duration-300 ${
-                    isActiveRoute(path) ? 'w-full' : 'group-hover:w-full'
-                  }`} 
-                />
-              </Link>
-            ))}
-
+                <Link
+                  key={path}
+                  to={path}
+                  className={`relative group py-2 px-4 transition-all duration-300 rounded-md ${
+                    isActiveRoute(path)
+                      ? 'text-tomex-light-teal font-semibold'
+                      : 'text-gray-600 hover:text-tomex-dark-teal'
+                  } ${label === 'nav.group' ? 'border border-teal-500 rounded-md' : ''}`}
+                >
+                  {t(label)}
+                  {label === 'nav.group' && (
+                    <span className="absolute inset-0 border-1 border-teal-500 rounded-md pointer-events-none" />
+                  )}
+                </Link>
+              ))}
+    
             <div className="relative">
               <button
                 onClick={toggleLanguageMenu}

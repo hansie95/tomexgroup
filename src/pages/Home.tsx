@@ -15,7 +15,8 @@ import {
   MapPin,
   ChevronDown,
   Phone,
-  Mail
+  Mail,
+  Component
 } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
@@ -25,8 +26,9 @@ const subsidiaries = [
     id: 'gift',
     name: 'Tomex Gift',
     description: 'home.subsidaires.gift',
-    image: 'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&q=80&w=1600',
-    gradient: 'from-tomex-dark-teal/90 to-tomex-light-teal/80',
+    //image: 'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&q=80&w=1600',
+    image: '/divisions/tomexgroup_division_gift.jpg',
+    gradient: 'bg-gradient-to-t from-tomex-dark-teal/100 via-tomex-dark-teal/80 to-transparent',
     icon: Gift,
     route: '/sectors/gift',
     logo: '/logos/tomex_gift_logo.png'
@@ -70,6 +72,16 @@ const subsidiaries = [
     icon: Hotel,
     route: '/sectors/hotel',
     logo: '/logos/szallodapro_logo.png'
+  },
+  {
+    id: 'group',
+    name: 'Tomexgroup',
+    description: 'home.subsidaires.group',
+    image: 'https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?auto=format&fit=crop&q=80&w=1600',
+    gradient: 'from-tomex-dark-teal/80 via-tomex-light-teal/70 to-tomex-dark-teal/80',
+    icon: Component,
+    route: '/',
+    logo: '/logos/tomex_group_line_logo.png'
   }
 ];
 

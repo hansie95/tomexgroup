@@ -12,7 +12,8 @@
     "med": "Tomex Med",
     "sport": "Tomex Sport",
     "tech": "Tomex Tech",
-    "hotel": "Szallodapro"
+    "hotel": "Szallodapro",
+    "group": "Tomex Group"
   },
   "home": {
     "hero": {
@@ -38,7 +39,8 @@
       "med": "Professional medical supplies and equipment",
       "sport": "High-quality sports equipment and accessories",
       "tech": "Enterprise IT solutions and services",
-      "hotel": "Premium hotel supplies and equipment"
+      "hotel": "Premium hotel supplies and equipment",
+      "group": "One company, multiple sectors. Your reliable partner in every industry"
     },
     "contact": {
       "headquarters": "Headquarters"

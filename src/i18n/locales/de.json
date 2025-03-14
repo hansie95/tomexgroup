@@ -12,7 +12,8 @@
     "med": "Tomex Med",
     "sport": "Tomex Sport",
     "tech": "Tomex Tech",
-    "hotel": "Szallodapro"
+    "hotel": "Szallodapro",
+    "group": "Tomex Group"
   },
   "home": {
     "hero": {
@@ -32,6 +33,14 @@
         "title": "Unsere Führungskräfte",
         "subtitle": "Lernen Sie unsere Direktoren kennen, die unsere Divisionen mit Expertise und Vision führen"
       }
+    },
+    "subsidaires": {
+      "gift": "Hochwertige Werbeartikel und Firmengeschenke",
+      "med": "Professionelle medizinische Versorgung und Ausrüstung",
+      "sport": "Hochwertige Sportausrüstung und Zubehör",
+      "tech": "Unternehmens-IT-Lösungen und Dienstleistungen",
+      "hotel": "Premium-Hotelausstattung und -zubehör",
+      "group": "Ein Unternehmen, mehrere Branchen. Ihr verlässlicher Partner in jeder Branche"
     },
     "contact": {
       "headquarters": "Hauptsitz"

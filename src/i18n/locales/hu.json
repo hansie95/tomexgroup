@@ -12,7 +12,8 @@
     "med": "Tomex Med",
     "sport": "Tomex Sport",
     "tech": "Tomex Tech",
-    "hotel": "Szallodapro"
+    "hotel": "Szallodapro",
+    "group": "Tomex Group"
   },
   "home": {
     "hero": {
@@ -33,12 +34,13 @@
         "subtitle": "Ismerje meg igazgatóinkat, akik szakértelemmel és jövőképpel vezetik ágazatainkat"
       }
     },
-    "subsidiaries": {
+    "subsidaires": {
       "gift": "Prémium reklámajándékok és vállalati ajándékok",
       "med": "Professzionális orvostechnikai kellékek és eszközök",
       "sport": "Kiváló minőségű sportfelszerelések és kiegészítők",
       "tech": "Vállalati IT megoldások és szolgáltatások",
-      "hotel": "Prémium szállodai kellékek és eszközök"
+      "hotel": "Prémium szállodai kellékek és eszközök",
+      "group": "Egy vállalat, több ágazat. Az Ön megbízható partner minden iparágban"
     },
     "contact": {
       "headquarters": "Központi iroda"

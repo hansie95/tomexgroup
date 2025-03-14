@@ -61,6 +61,11 @@ export const Header: React.FC = () => {
                   } ${label === 'nav.group' ? 'border border-teal-500 rounded-md' : ''}`}
                 >
                   {t(label)}
+               { label !== 'nav.group' && <span 
+                  className={`absolute bottom-0 left-0 w-0 h-0.5 bg-tomex-light-teal transition-all duration-300 ${
+                    isActiveRoute(path)  ? 'w-full' : 'group-hover:w-full'
+                  }`} 
+                />}
                   {label === 'nav.group' && (
                     <span className="absolute inset-0 border-1 border-teal-500 rounded-md pointer-events-none" />
                   )}

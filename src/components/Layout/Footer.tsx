@@ -28,10 +28,11 @@ const sectors = [
   { name: 'footer.sectors.hotel', path: '/sectors/hotel' },
 ];
 
+const stadiaToken = import.meta.env.VITE_STADIA_API_KEY
 // Custom map style with brand colors
 const mapStyle = {
   water: {
-    url: `https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png?api_key=${process.env.REACT_APP_STADIA_API_KEY}`,
+    url: `https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png?api_key=${stadiaToken}`,
     attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
   }
 };
